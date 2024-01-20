@@ -92,4 +92,5 @@ WIN+R -> gpedit.msc -> Конфигурация пользователя > Ад�
 21. Можете использовать:
 - Удаление защитника виндовс: https://github.com/ionuttbara/windows-defender-remover
 - Удаление edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
+- https://github.com/ChrisTitusTech/winutil
 22. Добавил фото с настройкой панели nvidia.
