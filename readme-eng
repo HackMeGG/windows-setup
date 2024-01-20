@@ -87,4 +87,7 @@ I recommend the second way, manually.
 - WIN+R -> %temp% -> Delete everything.
 - WIN+R -> temp -> Delete everything.
 - WIN+R -> prefetch -> Delete everything.
-- WIN+R -> cleanmgr /sageset:1 -> Select all checkboxes -> OK -> WIN+R -> cleanmgr /sagerun:1
+21. You can use:
+- Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
+- Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
+22. I added a photo with nvidia panel settings.
