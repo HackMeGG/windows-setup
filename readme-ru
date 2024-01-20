@@ -89,4 +89,7 @@ WIN+R -> gpedit.msc -> Конфигурация пользователя > Ад�
 - WIN+R -> %temp% -> Удалить всё.
 - WIN+R -> temp -> Удалить всё.
 - WIN+R -> prefetch -> Удалить всё.
-- WIN+R -> cleanmgr /sageset:1 -> Выбираем все галочки -> ОК -> WIN+R -> cleanmgr /sagerun:1
+21. Можете использовать:
+- Удаление защитника виндовс: https://github.com/ionuttbara/windows-defender-remover
+- Удаление edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
+22. Добавил фото с настройкой панели nvidia.
