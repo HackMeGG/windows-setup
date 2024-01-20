@@ -1,5 +1,5 @@
 RU:
-1. Отключаем автоматического обновления драйверов
+1. Отключаем автоматического обновления драйверов:
 WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows -> Создаём раздел(папку) WindowsUpdate -> И в ней создаём параметр Dword32 с названием ExcludeWUDriversInQualityUpdate и со значением 1. Дальше переходим по HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching находим SearchOrderConfig и выставляем значение 0.
 
 2. Установка последних драйверов на чипсет, лан, вайФай & блютуз, звук, их можно взять с сайта материнской платы.
@@ -37,7 +37,7 @@ WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows -> С
 Установить 7zip: https://www.7-zip.org/
 По желанию установить Java JDK: https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows
 
-6. используйте команду для восстановления отсутствующих или поврежденных системных файлов, в CMD от имени Админа: DISM/Online/Cleanup-Image/ScanHealth
+6. Используйте команду для восстановления отсутствующих или поврежденных системных файлов, в CMD от имени Админа: DISM/Online/Cleanup-Image/ScanHealth
 7. Настройки: 
 - Удалите приложения UWP которыми не пользуетесь: Settings -> Apps -> Installed Apps.
 - Настройки поиска Windows -> Найти мои файлы -> классический.
