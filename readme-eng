@@ -92,3 +92,4 @@ I recommend the second way, manually.
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - https://github.com/ChrisTitusTech/winutil
 22. I added a photo with nvidia panel settings.
+23. Remove Windows 11 Widgets (Powershell command) -> winget uninstall "windows web experience pack" 
