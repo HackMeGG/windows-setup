@@ -94,3 +94,4 @@ WIN+R -> gpedit.msc -> Конфигурация пользователя > Ад�
 - Удаление edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - https://github.com/ChrisTitusTech/winutil
 22. Добавил фото с настройкой панели nvidia.
+23. Удаление виджетов Windows 11 (команда Powershell) -> winget uninstall "windows web experience pack" 
