@@ -1,7 +1,6 @@
 ENG:
-1. disable automatic driver updates
+1. Disable automatic driver updates.
 WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows -> Create a WindowsUpdate section (folder) -> Create a Dword32 parameter with the name ExcludeWUDriversInQualityUpdate and the value 1. Then go to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching find SearchOrderConfig and set the value to 0.
-
 2. Install the latest drivers for chipset, lan, wi-fi & bluetooth, sound, they can be taken from the motherboard website.
 3. Uninstall through DDU the default driver on the GPU, which itself installed, the PC itself will restart.
 4. Install the driver for the GPU via Nvcleanstall (for nvidia) or Radeon Software Slimmer (for AMD).
@@ -10,7 +9,7 @@ Nvcleaninstall instructions:
 1) Download the latest GeForce Game Ready Driver for your GPU.
 2) Run Nvcleaninstall.
 3) Click on the Use driver files on disk section and specify the path to the driver.
-4) Uncheck all the checkboxes and go to the 8th item. If you need geforce experience, sound over HDMI and/or USB-C port from the video card, then read step 5-7.
+4) Uncheck all the checkboxes and go to the 8th item. If you need geforce experience, sound over HDMI and/or USB-C port from the video card, then read steps 5-7.
 5) For HDMI audio, check the box for HD Audio via HDMI.
 6) For GeForce Experience, check GeForce Experience, NV Container, Telemetry, NV Backend, NodeJS.
 7) For USB-C, check the USB-C driver checkbox.
@@ -87,9 +86,11 @@ I recommend the second way, manually.
 - WIN+R -> %temp% -> Delete everything.
 - WIN+R -> temp -> Delete everything.
 - WIN+R -> prefetch -> Delete everything.
-21. You can use:
+21. I added a photo with nvidia panel settings.
+22. Remove Windows 11 Widgets (Powershell command) -> winget uninstall "windows web experience pack" 
+23. Check if you have enabled Virtualization, because if it's enabled you have to disable Core Isolation from Windows Security. If you don't use Virtualization I recommend you disable it in the BIOS or disable Core Isolation from Windows.
+Windows Security -> Device security -> Core isolation -> Core isolation details -> Memory integrity -> Off.
+24. You can use:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
-- https://github.com/ChrisTitusTech/winutil
-22. I added a photo with nvidia panel settings.
-23. Remove Windows 11 Widgets (Powershell command) -> winget uninstall "windows web experience pack" 
+- AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
