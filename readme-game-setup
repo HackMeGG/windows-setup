@@ -11,3 +11,19 @@ Game Foler -> Game.exe -> Properties -> Compability -> Change Settings for all U
 -PUBG:
 1. Launch Options: -koreanrating
 2. Resolution: 1728x1080
+3. Sensivity: 
+-General sensivity: 37
+-Vertical multiplier: 1
+-Aim sens: 37
+-ADS sens: 33
+-Scoping sens: 33
+-Universal sens for all scopes: Enable
+4. Audio: HRTF - Enable
+5. Graphics: 
+-Render scale: 100
+-FOV: 90
+-Anti aliasing: High
+-Textures: Medium
+-Sharpen: Enable
+-DirectX 11 Enhanced
+-And the rest: Very Low or Disable.
