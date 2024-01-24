@@ -55,7 +55,8 @@ Optionally install Java JDK: https://www.oracle.com/cis/java/technologies/downlo
 - Control Panel -> Mouse -> Increase pointer accuracy (uncheck the box).
 - Control Panel -> System and Security -> Change UAC settings -> Never notify.
 - Control Panel -> Disable Firewall.
-Or you can turn it off via registry: Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile -> Disable Notifications & EnableFirewall -> 0.
+Or you can turn it off via registry: 
+WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile -> Disable Notifications & EnableFirewall -> 0.
 - Control Panel -> Power Plan -> Maximum Performance -> Power Button Actions -> fast startup and hibernation (OFF).
 If there is no "Maximum Performance" then write in cmd (as admin): powercfg -duplicatescheme e9a42b02-d5df-448d-448d-aa00-03f14749eb61
 Disable hibernation in cmd (as admin): powercfg /h off
@@ -93,7 +94,10 @@ I recommend the second way, manually.
 Windows Security -> Device security -> Core isolation -> Core isolation details -> Memory integrity -> Off.
 24. Device Manager -> your Network Adapter -> Power Management -> Uncheck all. Advanced -> Energy-Efficient Ethernet; Gigabit Lite; Green Ethernet; Power Saving Mode; Wake on magic *; Shutdown Wake-On-Lan -> Disable
 d
-26. You can use:
+25. Download https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file and run *.exe as administrator -> find your GPU and check the "msi" box, then click "Apply".
+26. Disable PowerThrottling !Use only for desktop PC's!:
+WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling -> PowerThrottlingOff -> 1 .
+27. You can use:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
