@@ -91,7 +91,8 @@ I recommend the second way, manually.
 23. Check if you have enabled Virtualization, because if it's enabled you have to disable Core Isolation from Windows Security. If you don't use Virtualization I recommend you disable it in the BIOS or disable Core Isolation from Windows.
 Windows Security -> Device security -> Core isolation -> Core isolation details -> Memory integrity -> Off.
 24. Device Manager -> your Network Adapter -> Power Management -> Uncheck all. Advanced -> Energy-Efficient Ethernet; Gigabit Lite; Green Ethernet; Power Saving Mode; Wake on magic *; Shutdown Wake-On-Lan -> Disable
-25. You can use:
+d
+26. You can use:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
