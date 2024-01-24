@@ -2,12 +2,14 @@
 Mouse DPI: 800
 Steam Overlay - Disabled
 Game Foler -> Game.exe -> Properties -> Compability -> Change Settings for all Users -> Disable fullscreen optimization.
+
 -CS2:
 1. Launch Options: -novid
 2. Resolution: 1080x1080
 3. Sensivity: 1.49
 4. Audio: EQ Profile - CRISP; L/R Isolation - 70%; Perspective Corection - YES.
 5. Graphics: Boost Player contrast - Enabled; VSync - Disabled; 4X MSAA; Shadows, Texture, Shader, Particle - LOW; Filtering Mode - Bilinear; Ambient Occlusion - Disabled; HDR - Quality; FSR - Disabled; Nvidia Reflex - Enabled.
+
 -PUBG:
 1. Launch Options: -koreanrating
 2. Resolution: 1728x1080
@@ -27,3 +29,4 @@ Game Foler -> Game.exe -> Properties -> Compability -> Change Settings for all U
 -Sharpen: Enable
 -DirectX 11 Enhanced
 -And the rest: Very Low or Disable.
+
