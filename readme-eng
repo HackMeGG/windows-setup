@@ -55,6 +55,7 @@ Optionally install Java JDK: https://www.oracle.com/cis/java/technologies/downlo
 - Control Panel -> Mouse -> Increase pointer accuracy (uncheck the box).
 - Control Panel -> System and Security -> Change UAC settings -> Never notify.
 - Control Panel -> Disable Firewall.
+Or you can turn it off via registry: Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile -> Disable Notifications & EnableFirewall -> 0.
 - Control Panel -> Power Plan -> Maximum Performance -> Power Button Actions -> fast startup and hibernation (OFF).
 If there is no "Maximum Performance" then write in cmd (as admin): powercfg -duplicatescheme e9a42b02-d5df-448d-448d-aa00-03f14749eb61
 Disable hibernation in cmd (as admin): powercfg /h off
