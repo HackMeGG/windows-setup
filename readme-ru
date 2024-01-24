@@ -58,7 +58,8 @@ WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows -> С
 - Панель управления -> Мышь -> Повысить точность указателя (снять флажок).
 - Панель управления -> Система и безопасность -> Изменить настройки UAC -> Никогда не уведомлять.
 - Панель управления -> Отключить брандмауэр.
-Или можете выключить его через реестр: Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile -> Disable Notifications & EnableFirewall -> 0.
+Или можете выключить его через реестр: 
+WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile -> Disable Notifications & EnableFirewall -> 0.
 - Панель управления -> План питания -> Максимальная Производительность -> Действия кнопок питания -> быстрый запуск и гибернация (ВЫКЛ).
 Если нет "Максимальная Производительность" то напишите в cmd (от имени админа): powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 Отключение гибернации в cmd (от имени админа): powercfg /h off
@@ -96,7 +97,8 @@ WIN+R -> gpedit.msc -> Конфигурация пользователя > Ад�
 Безопасность Windows -> Безопасность устройства -> Изоляция ядра -> Сведения об изоляции ядра -> Целостность памяти -> Выкл.
 24. Диспетчер устройств -> Ваш сетевой адаптер -> Управление питанием -> Снять все галочки. Advanced -> Energy-Efficient Ethernet; Gigabit Lite; Green Ethernet; Power Saving Mode; Wake on magic *; Shutdown Wake-On-Lan -> Disable
 25. Скачайте https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file и запустите *.exe от имени администратора -> найдите вашу GPU и поставьте галочку в поле "msi", после чего нажмите "Применить".
-26. Вы можете использовать:
+26. Отключите PowerThrottling !Использовать только для настольных ПК!: WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling -> PowerThrottlingOff -> 1 .
+27. Вы можете использовать:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
