@@ -96,8 +96,10 @@ Windows Security -> Device security -> Core isolation -> Core isolation details 
 d
 25. Download https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file and run *.exe as administrator -> find your GPU and check the "msi" box, then click "Apply".
 26. Disable PowerThrottling !Use only for desktop PC's!:
-WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling -> PowerThrottlingOff -> 1 .
-27. You can use:
+WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling -> PowerThrottlingOff -> 1.
+27. Disable unnecessary devices in Device Manager.
+Device Manager -> Disable: Microsoft GS Wavetable Synth; Composite Bus Enumerator; Microsoft Hyper-V Virtualization; Microsoft Virtual Drive Enumerator; NDIS Virtual Network; Remote Desktop Device; UMBus Root Bus Enumerator. 
+28. You can use:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
