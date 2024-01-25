@@ -98,7 +98,9 @@ WIN+R -> gpedit.msc -> Конфигурация пользователя > Ад�
 24. Диспетчер устройств -> Ваш сетевой адаптер -> Управление питанием -> Снять все галочки. Advanced -> Energy-Efficient Ethernet; Gigabit Lite; Green Ethernet; Power Saving Mode; Wake on magic *; Shutdown Wake-On-Lan -> Disable
 25. Скачайте https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file и запустите *.exe от имени администратора -> найдите вашу GPU и поставьте галочку в поле "msi", после чего нажмите "Применить".
 26. Отключите PowerThrottling !Использовать только для настольных ПК!: WIN+R -> regedit -> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling -> PowerThrottlingOff -> 1 .
-27. Вы можете использовать:
+27. Отключите ненужные устройства в Диспетчере устройств.
+Диспетчер устройств -> Отключить: Microsoft GS Wavetable Synth; Composite Bus Enumerator; Microsoft Hyper-V Virtualization; Microsoft Virtual Drive Enumerator; NDIS Virtual Network; Remote Desktop Device; UMBus Root Bus Enumerator. 
+28. Вы можете использовать:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
