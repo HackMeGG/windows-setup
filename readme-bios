@@ -1,5 +1,7 @@
 My BIOS settings for MSI Tomagawk Max II:
-Settings:
+
+
+-Essential settings:
 PCI Subsystem Settings
 
 ReSize Bar Support - Enabled
@@ -52,8 +54,8 @@ Trusted Computing
 
 First Enable Security Device Support- switch amd ftpm switch to amd ftpm disabled then disable Security Device Support
 
-Chassis Intrusion Config
 
+Chassis Intrusion Config
 Chassis Intrusion - Disabled
 
 
@@ -95,5 +97,5 @@ Power Down Enable - Disabled
 Gear Down Mode - Disabled ( Disable it if you can force t1 )
 TSME - Disabled
 
-OC:
+-My OC:
 When Setting manual Voltage make sure using the “Override Mode”
