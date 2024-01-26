@@ -34,7 +34,7 @@ System Power Fault Protection - Disabled
 AMD Overclocking →DDR & Infinity Fabric F/T → DDR Frequency and Timings  →  DRAM Controller Config  →  DRAM Power Options
 
 Power Down Enable - Disabled
-Gear Down Mode - Disabled ( Set T2 parameter from Auto to 1T if you want to disable the setting, leave it if you cant)
+Gear Down Mode - Disabled ( Set 2T parameter from Auto to T1 if you want to disable the setting, leave it if you cant)
 
 ACPI Settings
 
@@ -83,8 +83,8 @@ LN2 Mode 2 - Disabled
 AMD CBS  ↓
 Global C-state Control - Enabled (Disable if you have locked your CPU freq.)
 IOMMU - Disabled ( Needed for Virtual Machines )
-CPPC and CPPC Preferred Cores - Disabled ( Leave Enabled if you don't have a manual OC)
-Core Performance Boost - Disable this if you have a manual cpu overclock + voltage lock
+CPPC and CPPC Preferred Cores - Disabled (Leave Enabled if you don't have a manual OC)
+Core Performance Boost - Disable this if you have a manual cpu overclock + voltage lock. When Setting manual Voltage make sure using the “Override Mode”.
 
 A-XMP - Enabled (Disable if you have manual OC or you use Msi Try It)
 
@@ -94,8 +94,8 @@ Advanced DRAM Config ↓
 BankGroupSwap - Disabled ( Make sure you don't disable the similar looking setting called “disable bank group swap alt” )
 DRAM Latency Enhance - Enabled
 Power Down Enable - Disabled
-Gear Down Mode - Disabled ( Disable it if you can force t1 )
+Gear Down Mode - Disabled ( Disable it if you can force T1 )
 TSME - Disabled
 
--My OC:
+-OC:
 When Setting manual Voltage make sure using the “Override Mode”
