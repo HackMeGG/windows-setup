@@ -86,7 +86,7 @@ IOMMU - Disabled ( Needed for Virtual Machines )
 CPPC and CPPC Preferred Cores - Disabled (Leave Enabled if you don't have a manual OC)
 Core Performance Boost - Disable this if you have a manual cpu overclock + voltage lock. When Setting manual Voltage make sure using the “Override Mode”.
 
-A-XMP - Enabled (Disable if you have manual OC or you use Msi Try It)
+A-XMP - Enabled (Disable if you have manual OC or you use MSI Try It)
 
 GAME BOOST - Disable this if you have a manual cpu overclock + voltage lock.
 
