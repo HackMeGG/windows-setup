@@ -96,6 +96,3 @@ DRAM Latency Enhance - Enabled
 Power Down Enable - Disabled
 Gear Down Mode - Disabled ( Disable it if you can force T1 )
 TSME - Disabled
-
--OC:
-When Setting manual Voltage make sure using the “Override Mode”
