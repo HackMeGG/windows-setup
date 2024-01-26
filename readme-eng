@@ -102,7 +102,10 @@ Device Manager -> Disable: Microsoft GS Wavetable Synth; Composite Bus Enumerato
 28. Turn off restartable apps:
 Settings -> Accounts -> Sign-in options -> Turn off the "Automatically save my restartable apps and restart them when I sign back in" switch.
 Tip: Windows 11 can save and restart specific applications when you reboot the computer and sign in. However, if you want to improve the speed of your computer, you'll be better off disabling this feature.
-29. You can use:
+29. Disable Teredo:
+- WIN+R -> CMD -> netsh interface teredo set state disabled
+(CMD to enable: netsh interface teredo set state default )
+30. You can use:
 - Windows defender removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
