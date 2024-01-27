@@ -1,7 +1,7 @@
 RU:
+0. Перейдите в раздел Обновления Windows и установите все доступные обновления.
 1. Отключаем автоматического обновления драйверов:
 WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows -> Создаём раздел(папку) WindowsUpdate -> И в ней создаём параметр Dword32 с названием ExcludeWUDriversInQualityUpdate и со значением 1. Дальше переходим по HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching находим SearchOrderConfig и выставляем значение 0.
-
 2. Установка последних драйверов на чипсет, лан, вайФай & блютуз, звук, их можно взять с сайта материнской платы.
 3. Удаляем через DDU дефолтный драйвер на ГПУ который сам установился, ПК сам перезапустится.
 4. Установка драйвера на ГПУ через Nvcleanstall (для nvidia) или Radeon Software Slimmer (для AMD).
