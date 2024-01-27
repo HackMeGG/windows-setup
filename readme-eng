@@ -1,4 +1,5 @@
 ENG:
+0. Go to Windows Update and install all available updates.
 1. Disable automatic driver updates.
 WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows -> Create a WindowsUpdate section (folder) -> Create a Dword32 parameter with the name ExcludeWUDriversInQualityUpdate and the value 1. Then go to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching find SearchOrderConfig and set the value to 0.
 2. Install the latest drivers for chipset, lan, wi-fi & bluetooth, sound, they can be taken from the motherboard website.
