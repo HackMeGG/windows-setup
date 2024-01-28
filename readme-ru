@@ -115,3 +115,4 @@ WIN+R -> gpedit.msc -> Конфигурация пользователя > Ад�
 - Remove edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
 - O&O ShutUp10++: https://www.oo-software.com/en/shutup10
+- Активация Windows навсегда (команда для Powershell): irm https://massgrave.dev/get | iex
