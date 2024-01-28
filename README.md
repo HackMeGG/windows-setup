@@ -22,3 +22,4 @@ ___
 [My Games Settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup)
 ___
 [BIOS Settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios)
+___
