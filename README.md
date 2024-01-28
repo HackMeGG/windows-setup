@@ -10,8 +10,8 @@
 ___
 [Мои игровые настройки](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup)
 ___
-[Параметры BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios)
-
+[Параметры BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios) 
+___
 ### ENG:
 These instructions are for Windows users who want to improve the performance of their games. It doesn't mean that you will have 100 fps more, but the stability of the system will become much better.
 
