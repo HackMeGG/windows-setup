@@ -15,7 +15,7 @@ ___
 ### ENG:
 These instructions are for Windows users who want to improve the performance of their games. It doesn't mean that you will have 100 fps more, but the stability of the system will become much better.
 
-To use this instruction, just follow the step-by-step instructions. Before making any changes to your Windows settings, it is recommended that you create a system restore point. This will allow you to restore your system to its original state in case of problems.\
+To use this instruction, just follow the step-by-step guide. Before making any changes to Windows settings, it's recommended to create a system restore point. This will allow you to restore the system to its initial state in case of problems.\
 [Click here to open the system setup instruction](https://github.com/HackMeGG/windows11-setup/blob/main/readme-eng).
 
 ___
