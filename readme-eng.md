@@ -174,14 +174,20 @@ Settings -> Accounts -> Login Options -> Disable the switch "Automatically save 
 **Fullscreen Optimizations (FSO)** which takes full screen exclusive games and runs them instead in a highly optimized borderless windowed format that takes up the entire screen. 
 
 With FSO you get the visual experience and performance of running your game in FSE, but with the benefits of running in a windowed mode. These benefits include faster PC commands such as alt-tab, multiple monitor set ups and overlays. So if you don't need overlays I reccomend you to disable FSO for your games.
->To disable **FSO**:\
+
+To disable **FSO**:\
 Find the game **.exe** you are trying to play\
 Right click on the game and select "**Properties**"  
 Click "**Compatibility**" tab\
 CHECK the "**Disable fullscreen optimizations**" \
 hit **APPLY** and **OK** button.
 
-#### 31.  Enabling ReBar:
+**Disable FSO globally**:\
+You can disable FSO globally so you don't have to disable it for each application:\
+WIN + R -> regedit -> **HKEY_CURRENT_USER\System\GameConfigStore** -> **GameDVR_FSEBehavior** (*Dword32bit*)-> value: **2** (off) / **0** (on).
+#### 31. Disable Microsoft Store apps auto-update:
+**Microsoft Store** → click the profile icon → **Application Settings** → **Application Update** → switch to "**Off**".
+#### 32.  Enabling ReBar:
 ReBar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD ReBar is named SAM, it's the same thing as ReBar.
 
 :warning: To use ReBar, you need a **NVIDIA GeForce RTX 30-series** or **AMD RX 6000 series**, a compatible **CPU**, compatible **motherboard**.
@@ -196,7 +202,7 @@ ReBar (resizable BAR) enables more efficient communication between the CPU and t
 - To check if it's working check in NVIDIA Control Panle or in AMD Control Panel. 
 
 
-#### 32.  Additional software:
+#### 33.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
