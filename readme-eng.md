@@ -1,4 +1,4 @@
-## Windows Customization Guide in English:
+## Windows Customization Guide in Russian:
 ## This guide is based on Windows 11 settings, so some settings may not be available or may be called differently in Windows 10.
 #### 0. Install all available updates
 Go to **Windows Update** and install all available updates.
@@ -11,7 +11,7 @@ Go to **Windows Update** and install all available updates.
    - First uninstall the default driver for the GPU via DDU, after which the PC will restart itself.
    - Install the GPU drivers using Nvcleanstall (for nvidia) or Radeon Software Slimmer (for AMD).
 ___
-> Nvcleaninstall instructions:
+> <span style="color:red">Nvcleaninstall instructions:</span>
 1) Download the latest GeForce Game Ready Driver for your GPU.
 2) Run Nvcleaninstall.
 3) Click on the Use driver files on disk section and specify the path to the driver.
@@ -39,9 +39,9 @@ ___
 
 9)  Click **Next** and then **Install**, install the driver from the window that appears.
 10) Customize the panel (photo with settings in the repository)
-___
+___ 
 
->Tutorial for Radeon Software Slimmer:
+><span style="color:red">Tutorial for Radeon Software Slimmer:</span>
 1) Download the latest Recommended driver from the AMD website.
 2) Launch Radeon Software Slimmer.
 3) Click on the **Pre Install** section and specify the path to the driver.
@@ -63,10 +63,8 @@ ___
 * Install [7zip](https://www.7-zip.org/)
 * Optionally install [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
 ___
-#### 5. Check and repair system files
-Paste the commands into CMD as Administrator:
-- **DISM /Online /Cleanup-image /Restorehealth**
-- **sfc /scannow**
+#### 5. Check system files
+- Paste the command into CMD as Administrator: **DISM/Online/Cleanup-Image/ScanHealth**
 #### 6. Settings: 
 - Uninstall UWP apps you don't use: Settings -> Apps -> Installed Apps.
 - Windows Search Settings -> Find My Files -> Classic.
@@ -91,10 +89,11 @@ Paste the commands into CMD as Administrator:
 - Control Panel -> Disable Firewall.
 - Control Panel -> Power Plan -> Maximum Performance -> Power Button Actions -> fast startup and hibernation (OFF).
  
->:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
+><span style="color:red">:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**</span>
+
 
 - Disabling hibernation in cmd (as admin): **powercfg /h off**
-
+  
 :white_medium_square:*Tip: Sleep or Hibernation mode does not reboot the system and does not clear data in memory, so it is worth disabling them.*
 #### 8. Disabling Indexing
    Explorer -> Local Disk C -> PCM -> Properties -> 
@@ -125,16 +124,17 @@ WIN+R -> gpedit.msc -> User Configuration > Administrative Templates > Windows C
 
 2) Manually: WIN+R -> regedit -> **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm** -> Create a DWORD32bit parameter with the name **OverlayTestMode** and the value **5**.
 #### 16.  Disable Windows GameBar (WIN+G will work), use both steps:
-   **First Step**:
+   **Первый шаг**:
    >Проводник -> Диск С -> Windows -> System32 -> GameBarPresenceWriter.exe -> ПКМ -> Вкладка Безопасность -> Дополнительно -> Второй пункт, где Владелец нажмите Изменить -> здесь, где пустое место надо написать имя вашего аккаунта (его можно узнать в Параметры -> Аккаунты -> сверху будет написано имя вашего локального аккаунта или почта если вы ранее вошли в аккаунт) -> После чего написали имя нажмите на Проверить Имена -> Нажмите Применить потом Готово -> нажмите Добавить -> Выберите субъект -> Опять вводите имя пользователя -> Готово -> Во вкладке Общие Разрешения поставьте галочку напротив Полный Доступ -> Применяем и выходим -> Опять заходим -> ПКМ -> Вкладка Безопасность -> Дополнительно -> Второй пункт, где Владелец нажмите Изменить -> вместо нашего имени вводим NT Service\TrustedInstaller -> нажмите на Проверить Имена -> ОК -> Применить -> ОК -> ОК -> Теперь переименуйте файл (просто добавьте в конце несколько цифр).
 
-**Second Step**:
+**Второй шаг**:
 >WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter ->ПКМ по папке -> Разрешения -> Добавить -> пишем имя аккаунта -> нажмите на Проверить Имена -> Дополнительно -> где Владелец нажмите Изменить -> пишем имя аккаунта -> нажмите на Проверить Имена -> Применить потом Готово -> Поставьте галочку где Полный Контроль -> Закройте -> измените ActivationType -> значение 0.
 #### 17.  Uninstalling Windows 11 widgets 
 Powershell command: **winget uninstall "windows web experience pack "** 
 #### 18.  Disabling "Kernel Isolation"
 First check if you have virtualization enabled, because if you do, you will have to disable kernel isolation from **Windows Security**. If you don't use virtualization, you can disable it in BIOS or disable Kernel Isolation in Windows.
->**Windows Security -> Device Security -> Kernel Isolation -> Kernel Isolation Information -> Memory Integrity -> Off**.
+><span style="color:red">**Windows Security -> Device Security -> Kernel Isolation -> Kernel Isolation Information -> Memory Integrity -> Off**.</span>
+
 #### 19. Configuring the network adapter
   - Device Manager -> Your network adapter -> 
     - Power Management -> Uncheck all checkboxes. 
@@ -145,7 +145,8 @@ Download [MSI utility v3](https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_uti
 #### 21. Disabling PowerThrottling 
 :warning:Use for desktop PCs only!
 
->WIN+R -> regedit -> **Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling** -> **PowerThrottlingOff** -> **1** .
+><span style="color:red">WIN+R -> regedit -> **Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling** -> **PowerThrottlingOff** -> **1**.</span>
+
 #### 22. Disable unnecessary devices in Device Manager.
 Device Manager -> Disable: **Microsoft GS Wavetable Synth; Composite Bus Enumerator; Microsoft Hyper-V Virtualization; Microsoft Virtual Drive Enumerator; NDIS Virtual Network; Remote Desktop Device; UMBus Root Bus Enumerator**.
 #### 23. Automatic restart of applications at system startup
@@ -174,11 +175,15 @@ Settings -> Accounts -> Login Options -> Disable the switch "Automatically save 
 
 With FSO you get the visual experience and performance of running your game in FSE, but with the benefits of running in a windowed mode. These benefits include faster PC commands such as alt-tab, multiple monitor set ups and overlays. So if you don't need overlays I reccomend you to disable FSO for your games.
 >To disable **FSO**:\
+<span style="color:red">
 Find the game **.exe** you are trying to play\
 Right click on the game and select "**Properties**"  
 Click "**Compatibility**" tab\
 CHECK the "**Disable fullscreen optimizations**" \
 hit **APPLY** and **OK** button.
+
+</span>
+
 #### 31.  Additional software:
 - Activating Windows Forever (Powershell command): irm https://massgrave.dev/get | iex
 - Windows Defender Removal: https://github.com/ionuttbara/windows-defender-remover
