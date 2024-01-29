@@ -178,10 +178,10 @@ Click "**Compatibility**" tab\
 CHECK the "**Disable fullscreen optimizations**" \
 hit **APPLY** and **OK** button.
 
-#### 31.  Enabling RE-Bar:
-Rebar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD RE-Bar is named SAM, it's the same thing as ReBar.
+#### 31.  Enabling ReBar:
+ReBar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD ReBar is named SAM, it's the same thing as ReBar.
 
-:warning: To use REBAR, you need a **NVIDIA GeForce RTX 30-series** or **AMD RX 6000 series**, a compatible **CPU**, compatible **motherboard**.
+:warning: To use ReBar, you need a **NVIDIA GeForce RTX 30-series** or **AMD RX 6000 series**, a compatible **CPU**, compatible **motherboard**.
 
 - To enable Resizable BAR:
   - Enter the system’s BIOS configuration
