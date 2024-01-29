@@ -57,7 +57,7 @@ ___
 8) Customize the panel (photo with settings in the repository)
 ___
 #### 4. Install the required software:
-* Install the [Visual C++ AIO] package(https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
+* Install the [Visual C++ AIO package](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 * Install [DirectX](https://www.microsoft.com/en-us/Download/confirmation.aspx?id=35)
 * Install [.Net Framework 4.8.1](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 * Install [7zip](https://www.7-zip.org/)
