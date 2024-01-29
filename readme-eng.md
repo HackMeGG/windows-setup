@@ -207,4 +207,4 @@ ReBar (resizable BAR) enables more efficient communication between the CPU and t
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
-- explorerpatcher for Windows 11 customization :warning:Warning, problems may occur (crash, blue screen) https://github.com/valinet/ExplorerPatcher
+- explorerpatcher for Windows 11 customization :warning:Warning, may occur problems like BSOD's https://github.com/valinet/ExplorerPatcher
