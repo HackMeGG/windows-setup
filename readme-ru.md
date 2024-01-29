@@ -195,7 +195,7 @@ ReBar (resizable BAR) обеспечивает более эффективное
     - Поддержка баров Re-Size BAR
 - Чтобы проверить, работает ли она, зайдите в панель управления NVIDIA или в панель управления AMD.
 #### 32.  Дополнительный софт:
-- Активация Windows навсегда (команда для Powershell): irm https://massgrave.dev/get | iex
+- Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
 - Windows Defender Removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove Edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
