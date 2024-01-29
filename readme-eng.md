@@ -123,10 +123,10 @@ WIN+R -> gpedit.msc -> User Configuration > Administrative Templates > Windows C
 
 2) Manually: WIN+R -> regedit -> **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm** -> Create a DWORD32bit parameter with the name **OverlayTestMode** and the value **5**.
 #### 16.  Disable Windows GameBar (WIN+G will work), use both steps:
-   **Первый шаг**:
+   **First Step**:
    >Проводник -> Диск С -> Windows -> System32 -> GameBarPresenceWriter.exe -> ПКМ -> Вкладка Безопасность -> Дополнительно -> Второй пункт, где Владелец нажмите Изменить -> здесь, где пустое место надо написать имя вашего аккаунта (его можно узнать в Параметры -> Аккаунты -> сверху будет написано имя вашего локального аккаунта или почта если вы ранее вошли в аккаунт) -> После чего написали имя нажмите на Проверить Имена -> Нажмите Применить потом Готово -> нажмите Добавить -> Выберите субъект -> Опять вводите имя пользователя -> Готово -> Во вкладке Общие Разрешения поставьте галочку напротив Полный Доступ -> Применяем и выходим -> Опять заходим -> ПКМ -> Вкладка Безопасность -> Дополнительно -> Второй пункт, где Владелец нажмите Изменить -> вместо нашего имени вводим NT Service\TrustedInstaller -> нажмите на Проверить Имена -> ОК -> Применить -> ОК -> ОК -> Теперь переименуйте файл (просто добавьте в конце несколько цифр).
 
-**Второй шаг**:
+**Second Step**:
 >WIN+R -> regedit -> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter ->ПКМ по папке -> Разрешения -> Добавить -> пишем имя аккаунта -> нажмите на Проверить Имена -> Дополнительно -> где Владелец нажмите Изменить -> пишем имя аккаунта -> нажмите на Проверить Имена -> Применить потом Готово -> Поставьте галочку где Полный Контроль -> Закройте -> измените ActivationType -> значение 0.
 #### 17.  Uninstalling Windows 11 widgets 
 Powershell command: **winget uninstall "windows web experience pack "** 
