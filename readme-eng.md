@@ -197,7 +197,7 @@ ReBar (resizable BAR) enables more efficient communication between the CPU and t
 
 
 #### 32.  Additional software:
-- Activating Windows Forever (Powershell command): irm https://massgrave.dev/get | iex
+- Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - Windows Defender Removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove Edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
 - AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
