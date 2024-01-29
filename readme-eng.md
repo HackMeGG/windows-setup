@@ -63,8 +63,10 @@ ___
 * Install [7zip](https://www.7-zip.org/)
 * Optionally install [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
 ___
-#### 5. Check system files
-- Paste the command into CMD as Administrator: **DISM/Online/Cleanup-Image/ScanHealth**
+#### 5. Check and repair system files
+Paste the commands into CMD as Administrator:
+- **DISM /Online /Cleanup-image /Restorehealth**
+- **sfc /scannow**
 #### 6. Settings: 
 - Uninstall UWP apps you don't use: Settings -> Apps -> Installed Apps.
 - Windows Search Settings -> Find My Files -> Classic.
