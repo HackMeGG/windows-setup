@@ -196,10 +196,6 @@ ReBar (resizable BAR) обеспечивает более эффективное
 - Чтобы проверить, работает ли она, зайдите в панель управления NVIDIA или в панель управления AMD.
 #### 32.  Дополнительный софт:
 - Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
-- Windows Defender Removal: https://github.com/ionuttbara/windows-defender-remover
-- Remove Edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
-- AllInOne ToolBox: https://github.com/ChrisTitusTech/winutil
-- O&O ShutUp10++: https://www.oo-software.com/en/shutup10
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
