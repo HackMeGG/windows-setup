@@ -187,7 +187,9 @@ You can disable FSO globally so you don't have to disable it for each applicatio
 WIN + R -> regedit -> **HKEY_CURRENT_USER\System\GameConfigStore** -> **GameDVR_FSEBehavior** (*Dword32bit*)-> value: **2** (off) / **0** (on).
 #### 31. Disable Microsoft Store apps auto-update:
 **Microsoft Store** → click the profile icon → **Application Settings** → **Application Update** → switch to "**Off**".
-#### 32.  Enabling ReBar:
+#### 32.  Disable sticky keys:
+Control Panel -> Ease of Access -> Ease of Access Center -> Make the Keyboard Easier To Use -> Under “Make it Easier To Type” -> uncheck the “Turn on Sticky Keys” -> Apply.
+#### 33.  Enabling ReBar:
 ReBar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD ReBar is named SAM, it's the same thing as ReBar.
 
 :warning: To use ReBar, you need a **NVIDIA GeForce RTX 30-series** or **AMD RX 6000 series**, a compatible **CPU**, compatible **motherboard**.
@@ -202,9 +204,9 @@ ReBar (resizable BAR) enables more efficient communication between the CPU and t
 - To check if it's working check in NVIDIA Control Panle or in AMD Control Panel. 
 
 
-#### 33.  Additional software:
+#### 34.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
-- explorerpatcher for Windows 11 customization :warning:Warning, may occur problems like BSOD's https://github.com/valinet/ExplorerPatcher
+- explorerpatcher for Windows 11 customization/customization :warning:Warning, problems may occur (crash, blue screen) https://github.com/valinet/ExplorerPatcher
