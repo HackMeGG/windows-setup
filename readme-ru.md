@@ -65,8 +65,9 @@ ___
 * По желанию установить [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
 ___
 #### 5. Проверка файлов системы
-- Вставьте команду в CMD от имени Администратора: **DISM/Online/Cleanup-Image/ScanHealth**
-
+Вставьте команды в CMD от имени Администратора:
+- **DISM /Online /Cleanup-image /Restorehealth**
+- **sfc /scannow**
 #### 6. Настройки: 
 - Удалите приложения UWP которыми не пользуетесь: Settings -> Apps -> Installed Apps.
 - Настройки поиска Windows -> Найти мои файлы -> классический.
