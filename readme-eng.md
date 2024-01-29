@@ -11,7 +11,7 @@ Go to **Windows Update** and install all available updates.
    - First uninstall the default driver for the GPU via DDU, after which the PC will restart itself.
    - Install the GPU drivers using Nvcleanstall (for nvidia) or Radeon Software Slimmer (for AMD).
 ___
-> <span style="color:red">Nvcleaninstall instructions:</span>
+> Nvcleaninstall instructions:
 1) Download the latest GeForce Game Ready Driver for your GPU.
 2) Run Nvcleaninstall.
 3) Click on the Use driver files on disk section and specify the path to the driver.
@@ -39,9 +39,9 @@ ___
 
 9)  Click **Next** and then **Install**, install the driver from the window that appears.
 10) Customize the panel (photo with settings in the repository)
-___ 
+___
 
-><span style="color:red">Tutorial for Radeon Software Slimmer:</span>
+>Tutorial for Radeon Software Slimmer:
 1) Download the latest Recommended driver from the AMD website.
 2) Launch Radeon Software Slimmer.
 3) Click on the **Pre Install** section and specify the path to the driver.
@@ -89,11 +89,10 @@ ___
 - Control Panel -> Disable Firewall.
 - Control Panel -> Power Plan -> Maximum Performance -> Power Button Actions -> fast startup and hibernation (OFF).
  
-><span style="color:red">:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**</span>
-
+>:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
 
 - Disabling hibernation in cmd (as admin): **powercfg /h off**
-  
+
 :white_medium_square:*Tip: Sleep or Hibernation mode does not reboot the system and does not clear data in memory, so it is worth disabling them.*
 #### 8. Disabling Indexing
    Explorer -> Local Disk C -> PCM -> Properties -> 
@@ -133,8 +132,7 @@ WIN+R -> gpedit.msc -> User Configuration > Administrative Templates > Windows C
 Powershell command: **winget uninstall "windows web experience pack "** 
 #### 18.  Disabling "Kernel Isolation"
 First check if you have virtualization enabled, because if you do, you will have to disable kernel isolation from **Windows Security**. If you don't use virtualization, you can disable it in BIOS or disable Kernel Isolation in Windows.
-><span style="color:red">**Windows Security -> Device Security -> Kernel Isolation -> Kernel Isolation Information -> Memory Integrity -> Off**.</span>
-
+>**Windows Security -> Device Security -> Kernel Isolation -> Kernel Isolation Information -> Memory Integrity -> Off**.
 #### 19. Configuring the network adapter
   - Device Manager -> Your network adapter -> 
     - Power Management -> Uncheck all checkboxes. 
@@ -145,8 +143,7 @@ Download [MSI utility v3](https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_uti
 #### 21. Disabling PowerThrottling 
 :warning:Use for desktop PCs only!
 
-><span style="color:red">WIN+R -> regedit -> **Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling** -> **PowerThrottlingOff** -> **1**.</span>
-
+>WIN+R -> regedit -> **Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling** -> **PowerThrottlingOff** -> **1** .
 #### 22. Disable unnecessary devices in Device Manager.
 Device Manager -> Disable: **Microsoft GS Wavetable Synth; Composite Bus Enumerator; Microsoft Hyper-V Virtualization; Microsoft Virtual Drive Enumerator; NDIS Virtual Network; Remote Desktop Device; UMBus Root Bus Enumerator**.
 #### 23. Automatic restart of applications at system startup
@@ -175,14 +172,11 @@ Settings -> Accounts -> Login Options -> Disable the switch "Automatically save 
 
 With FSO you get the visual experience and performance of running your game in FSE, but with the benefits of running in a windowed mode. These benefits include faster PC commands such as alt-tab, multiple monitor set ups and overlays. So if you don't need overlays I reccomend you to disable FSO for your games.
 >To disable **FSO**:\
-<span style="color:red">
 Find the game **.exe** you are trying to play\
 Right click on the game and select "**Properties**"  
 Click "**Compatibility**" tab\
 CHECK the "**Disable fullscreen optimizations**" \
 hit **APPLY** and **OK** button.
-
-</span>
 
 #### 31.  Additional software:
 - Activating Windows Forever (Powershell command): irm https://massgrave.dev/get | iex
