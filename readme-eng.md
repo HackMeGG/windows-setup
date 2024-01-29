@@ -178,7 +178,22 @@ Click "**Compatibility**" tab\
 CHECK the "**Disable fullscreen optimizations**" \
 hit **APPLY** and **OK** button.
 
-#### 31.  Additional software:
+#### 31.  Enabling RE-Bar:
+Rebar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD RE-Bar is named SAM, it's the same thing as ReBar.
+
+:warning: To use REBAR, you need a **NVIDIA GeForce RTX 30-series** or **AMD RX 6000 series**, a compatible **CPU**, compatible **motherboard**.
+
+- To enable Resizable BAR:
+  - Enter the system’s BIOS configuration
+  - Disable **Compatibility Support Module (CSM) / Legacy Mode** and enable **UEFI** boot mode.
+  - Enable (or check Auto if the Enabled option is not present):\
+      *They are often found in the PCIe Subsystem settings*
+    - Above 4G Decoding
+    - Re-Size BAR Support
+- To check if it's working check in NVIDIA Control Panle or in AMD Control Panel. 
+
+
+#### 32.  Additional software:
 - Activating Windows Forever (Powershell command): irm https://massgrave.dev/get | iex
 - Windows Defender Removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove Edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
