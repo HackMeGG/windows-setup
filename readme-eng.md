@@ -167,7 +167,15 @@ Settings -> Accounts -> Login Options -> Disable the switch "Automatically save 
 - WIN+R -> **temp** -> Delete everything.
 - WIN+R -> **prefetch** -> Delete everything.
 - WIN+R -> **cmd** -> ipconfig /flushdns
-#### 30.  Additional software:
+#### 30.  Disable FSO:
+**Fullscreen Exclusive (FSE)** mode gives your game complete ownership of the display and allocation of resources of your graphics card. **Fullscreen Optimizations (FSO)** which takes full screen exclusive games and runs them instead in a highly optimized borderless windowed format that takes up the entire screen. You get the visual experience and performance of running your game in FSE, but with the benefits of running in a windowed mode. These benefits include faster PC commands such as alt-tab, multiple monitor set ups and overlays.
+>To disable FSO:
+Find the game .exe you are trying to play 
+Right click on the game and select "Properties" 
+Click " Compatibility" tab
+CHECK the "Disable fullscreen optimizations" 
+hit APPLY and OK button 
+#### 31.  Additional software:
 - Activating Windows Forever (Powershell command): irm https://massgrave.dev/get | iex
 - Windows Defender Removal: https://github.com/ionuttbara/windows-defender-remover
 - Remove Edge: https://github.com/ShadowWhisperer/Remove-MS-Edge
