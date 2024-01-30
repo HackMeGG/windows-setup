@@ -1,6 +1,6 @@
 -Global Settings:
-Mouse DPI: 800
-Steam Overlay - Disabled
+Mouse DPI: 800\
+Steam Overlay - Disabled\
 Game Foler -> Game.exe -> Properties -> Compability -> Change Settings for all Users -> Disable fullscreen optimization.
 
 -CS2:
