@@ -1,6 +1,6 @@
 # Windows Optimization Guide by **HackMe** :heart:
-## This Guide works on last Windows 10 22H2 and Windows 11 23H2
-
+## This Guide works on last Windows 10 22H2 and Windows 11 23H2\ 
+Гайд подходит для Windows 11 23H2 и для последней Windows 10 22H2
 ### RU:
 :white_check_mark: ***Используйте его на свой страх и риск***
 
