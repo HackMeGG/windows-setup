@@ -9,9 +9,9 @@
 Чтобы использовать эту инструкцию, просто следуйте пошаговым инструкциям. Перед внесением каких-либо изменений в параметры Windows рекомендуется создать точку восстановления системы. Это позволит вам восстановить систему в исходное состояние в случае возникновения проблем.\
 [Нажмите здесь, чтобы открыть инструкцию по настройке системы](https://github.com/HackMeGG/windows11-setup/blob/main/readme-ru.md).
 ___
-[Мои игровые настройки](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup)
+[Мои игровые настройки](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup.md)
 ___
-[Параметры BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios)
+[Параметры BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios.md)
 
 ### ENG:
 :white_check_mark: ***Use it on your own risk***
@@ -22,6 +22,6 @@ To use this instruction, just follow the step-by-step guide. Before making any c
 [Click here to open the system setup instruction](https://github.com/HackMeGG/windows11-setup/blob/main/readme-eng.md).
 
 ___
-[My Games Settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup)
+[My Games Settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup.md)
 ___
-[BIOS Settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios)
+[BIOS Settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios.md)
