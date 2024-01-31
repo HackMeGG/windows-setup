@@ -208,8 +208,16 @@ By default, Windows will compress images to around 80-85% before you set them as
 - **To disable compression**:
 WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DWORD(32-bit) **JPEGImportQuality** → Choose **Base** as **Decimal** and click **OK**. After change the **Value** to **100**. Restart PC and re-upload your background.
 - **To revert** the changes, change the DWORD **Value** data to **0**.
+#### 35. :warning:Don't do it if you care about your safety! Disabling mitigation: **Spectre & Meltdown**.
+- **Spectre** affects Intel & AMD processors.
+- **Meltdown** affects Intel processors.
 
-#### 35.  Additional software:
+To disable:
+
+
+About:\
+**Meltdown & Spectre** exploit critical vulnerabilities in modern processors. These hardware vulnerabilities allow programs to steal data which is currently processed on the computer. 
+#### 36.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
