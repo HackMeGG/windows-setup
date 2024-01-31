@@ -133,9 +133,9 @@ WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows
 >WIN+R → regedit → HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter →ПКМ по папке → Разрешения → Добавить → пишем имя аккаунта → нажмите на Проверить Имена → Дополнительно → где Владелец нажмите Изменить → пишем имя аккаунта → нажмите на Проверить Имена → Применить потом Готово → Поставьте галочку где Полный Контроль → Закройте → измените ActivationType → значение 0.
 #### 17.  Uninstalling Windows 11 widgets 
 Powershell command: **winget uninstall "windows web experience pack "** 
-#### 18.  Disabling "Kernel Isolation"
-First check if you have virtualization enabled, because if you do, you will have to disable kernel isolation from **Windows Security**. If you don't use virtualization, you can disable it in BIOS or disable Kernel Isolation in Windows.
->**Windows Security → Device Security → Kernel Isolation → Kernel Isolation Information → Memory Integrity → Off**.
+#### 18.  Disabling "VBS (Core Isolation, Memory Integrity)"
+First check if you have virtualization enabled, because if you do, you will have to disable Core isolation from **Windows Security**. If you don't use virtualization, you can disable it in BIOS or disable Core Isolation in Windows.
+>**Windows Security → Device Security → Core Isolation → Core Isolation Information → Memory Integrity → Off**.
 #### 19. Configuring the network adapter
   - Device Manager → Your network adapter → 
     - Power Management → Uncheck all checkboxes. 
