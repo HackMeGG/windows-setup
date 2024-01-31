@@ -202,7 +202,14 @@ ReBar (resizable BAR) обеспечивает более эффективное
     - Декодирование выше 4G
     - Поддержка баров Re-Size BAR
 - Чтобы проверить, работает ли она, зайдите в панель управления NVIDIA или в панель управления AMD.
-#### 34.  Дополнительный софт:
+
+#### 34.  Сжатие обоев в Windows 11:
+По умолчанию Windows сжимает изображения примерно до 80-85%, прежде чем установить их в качестве обоев. Однако иногда это может привести к размытым изображениям. На производительность это не влияет.
+- **Чтобы отключить сжатие**:
+WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → Новый DWORD(32-bit) **JPEGImportQuality** → Выберите **Base** как **Decimal** и нажмите **OK**. После этого измените **Value** на **100**. Перезагрузите компьютер и заново загрузите фон.
+- Чтобы отменить изменения, измените данные DWORD **Value** на **0**.
+
+#### 35.  Дополнительный софт:
 - Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
