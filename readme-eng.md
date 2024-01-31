@@ -204,7 +204,7 @@ ReBar (resizable BAR) enables more efficient communication between the CPU and t
 - To check if it's working check in NVIDIA Control Panle or in AMD Control Panel. 
 
 #### 34.  Windows 11 wallpaper compression:
-By default, Windows will compress images to around ~85% before you set them as wallpapers. However, this can sometimes result in blurry images. It doesn't affect performance.
+By default, Windows will compress images to around 80-85% before you set them as wallpapers. However, this can sometimes result in blurry images. It doesn't affect performance.
 - **To disable compression**:
 WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DWORD(32-bit) **JPEGImportQuality** → Choose **Base** as **Decimal** and click **OK**. After change the **Value** to **100**. Restart PC and re-upload your background.
 - **To revert** the changes, change the DWORD **Value** data to **0**.
