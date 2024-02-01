@@ -38,7 +38,7 @@ ___
     >>* **Auto accept driver unsigned warning**.
 
 9) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
-10) Настроить панель (фото с настройками в репозитории)
+10) Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel)
 ___
 
 >Инструкция по Radeon Software Slimmer:
