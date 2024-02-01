@@ -212,9 +212,7 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
   - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype off**
 - To enable:
   - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype auto**
-#### 36.  Network Autotuning:
-**SOON**
-#### 37.  Additional software:
+#### 36.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
