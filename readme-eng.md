@@ -93,7 +93,7 @@ Paste the commands into CMD as Administrator:
 - Control Panel → Power Plan → Maximum Performance → Power Button Actions → fast startup and hibernation (OFF).
  
 >:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
-
+:warning: Power Plan *Maximum Performance* can cause big temperatures on *notebooks*.
 - Disabling hibernation in cmd (as admin): **powercfg /h off**
 
 :white_medium_square:*Tip: Sleep or Hibernation mode does not reboot the system and does not clear data in memory, so it is worth disabling them.*
@@ -116,6 +116,7 @@ WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Win
 #### 13.  Disabling Windows Copilot:
 WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows Components > Windows Copilot → Disable Windows Copilot select "Enabled".
 #### 14. Disable Windows Defender (use all three items):
+:warning: Disabling Defender will improve performance but reduce security. If you care about security use Defender or disable it but use another AntiVirus.
 1) WIN+R → regedit → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender** → create a Dword32bit named **DisableAntiSpyware** → value **1**
 3) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program → Disable Microsoft Defender Antivirus Program → **On**.
 4) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program > Persistent Protection → Disable Persistent Protection → **Enabled**.
@@ -144,7 +145,7 @@ First check if you have virtualization enabled, because if you do, you will have
 #### 20.  Switching the video card in MSI mode
 Download [MSI utility v3](https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file) and run the application as administrator → find your video card and check the "**msi**" box, then click "**Apply**".
 #### 21. Disabling PowerThrottling 
-:warning:Use for desktop PCs only!
+:warning:Use for desktop PCs only! On notebook's can cause big temperatures.
 
 >WIN+R → regedit → **Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling** → **PowerThrottlingOff** → **1** .
 #### 22. Disable unnecessary devices in Device Manager.
@@ -208,20 +209,47 @@ By default, Windows will compress images to around 80-85% before you set them as
 - **To disable compression**:
 WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DWORD(32-bit) **JPEGImportQuality** → Choose **Base** as **Decimal** and click **OK**. After change the **Value** to **100**. Restart PC and re-upload your background.
 - **To revert** the changes, change the DWORD **Value** data to **0**.
+
 #### 35.  Disabling mitigation: **Spectre & Meltdown**.
-:warning:Don't do it if you care about your safety!
+:warning:Don't do it if you care about your safety! Disabling mitigations will improve performance on old CPU's but will reduce security.
 - **Spectre** affects Intel & AMD processors.
 - **Meltdown** affects Intel processors.
-
+ 
+#### Commands for Powershell:
 *To disable*:
-- Spectre:
-- Meltdown:
+- Spectre: \
+  **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 1 /f**\
+and\
+   **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 1 /f**
+
+- Spectre & Meltdown:\
+  **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 3 /f**\
+and\
+   **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f**
+  
+*To enable:*
+- Spectre:\
+  **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 0 /f**\
+and\
+   **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 1 /f**
+
+- Spectre & Meltdown:\
+   **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 0 /f**\
+and\
+   **reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f**
   
 *About*:\
-You will get a performance gain of about 5-30%, the performance impact is highly dependent on your hardware and operating system. \
-**Meltdown & Spectre** exploit critical vulnerabilities in modern processors. These hardware vulnerabilities allow programs to steal data which is currently processed on the computer. 
-
-#### 36.  Additional software:
+You will get a performance gain of about 5%, the performance impact is highly dependent on your hardware and operating system. \
+**Meltdown & Spectre** exploit critical vulnerabilities in processors. These hardware vulnerabilities allow programs to steal data which is currently processed on the computer. 
+#### 36.  Disabling Hyper-V:
+Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can conflict with third-party apps on your PC, including other virtualization tools such as VMWare Workstation, VirtualBox, and emulators. As a result, you may encounter the Hyper-V detected error when trying to launch an app, PC games, or hardware tuning utilities. So, if you need to use third-party virtualization software, including VMware WorkStation and Virtual Box, you must disable the Hyper-V Hypervisor.
+- To disable:
+  - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype off**
+- To enable:
+  - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype auto**
+#### 37.  Network Autotuning:
+**SOON**
+#### 38.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
