@@ -1,4 +1,4 @@
-# Windows Customization Guide in English:
+# Windows Optimization Guide in English:
 ## This guide is based on Windows 11 settings, so some settings may not be available or may be called differently in Windows 10.
 #### 0. Install all available updates:
 Go to **Windows Update** and install all available updates.
