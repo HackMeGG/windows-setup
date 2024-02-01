@@ -209,9 +209,11 @@ WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → Нов
 #### 35.  Отключение Hyper-V:
 Hyper-V - это средство виртуализации, встроенное в Windows. К сожалению, Hyper-V может конфликтовать с приложениями сторонних разработчиков на вашем компьютере, включая другие средства виртуализации, такие как VMWare Workstation, VirtualBox и эмуляторы. В результате вы можете столкнуться с ошибкой Hyper-V при попытке запустить приложение, игры или утилиты для настройки оборудования. Поэтому, если вам необходимо использовать стороннее программное обеспечение для виртуализации, включая VMware WorkStation и Virtual Box, необходимо отключить гипервизор Hyper-V.
 - Чтобы отключить:
-  - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype off**
+  - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype off**
 - Чтобы включить:
-  - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype auto**
+  - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype auto**
+#### 36. Классическое контекстное меню ПКМ в Windows 11:
+  - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → Новый *ключ* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → ПКМ на созданном ключе и создайте еще один ключ с именем **InprocServer32**, и значение строки **(Default)** должно быть пустым.
 #### 36.  Дополнительный софт:
 - Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
