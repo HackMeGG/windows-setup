@@ -1,19 +1,19 @@
-## Windows Customization Guide in English:
+# Windows Customization Guide in English:
 ## This guide is based on Windows 11 settings, so some settings may not be available or may be called differently in Windows 10.
-#### 0. Install all available updates
+#### 0. Install all available updates:
 Go to **Windows Update** and install all available updates.
 #### 1. Disable automatic driver updates:
-- WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → Create a section (*folder*) **WindowsUpdate** → And in it create a Dword32 parameter named **ExcludeWUDriversInQualityUpdate** with the value **1**.
+- WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → Create a section named **WindowsUpdate** → And in it create a Dword32 parameter named **ExcludeWUDriversInQualityUpdate** with the value **1**.
 - Then go to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching** find **SearchOrderConfig** and set the value to **0**. 
-#### 2. Installing Drivers
- 1) Install the latest drivers for chipset, lan, wifi & bluetooth, sound, you can get them from the motherboard website.
-#### 3. Installing the driver for the GPU
-   - First uninstall the default driver for the GPU via DDU, after which the PC will restart itself.
+#### 2. Installing Drivers:
+ 1) Install the latest drivers for chipset, lan, wifi & bluetooth, sound. You can get them from the motherboard website.
+#### 3. Installing the driver for the GPU:
+   - First uninstall the default driver for the GPU via DDU, after which the PC will restart.
    - Install the GPU drivers using Nvcleanstall (for nvidia) or Radeon Software Slimmer (for AMD).
 ___
-> Nvcleaninstall instructions:
+### Nvcleanstall instruction:
 1) Download the latest GeForce Game Ready Driver for your GPU.
-2) Run Nvcleaninstall.
+2) Run Nvcleanstall.
 3) Click on the Use driver files on disk section and specify the path to the driver.
 4) Uncheck all the checkboxes and go to the 8th item.
    
@@ -63,13 +63,11 @@ ___
 * Install [7zip](https://www.7-zip.org/)
 * Optionally install [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
 ___
-#### 5. Checking system files integrity
-Paste the commands into CMD as Administrator:
-- **DISM /Online /Cleanup-image /Restorehealth**
+#### 5. Checking system files integrity:
+Paste the command into CMD as Administrator:
 - **sfc /scannow**
-
 #### 6. Settings: 
-- Uninstall UWP apps you don't use: Settings → Apps → Installed Apps.
+- Uninstall apps you don't use: Settings → Apps → Installed Apps.
 - Windows Search Settings → Find My Files → Classic.
 - Settings → Games → Captures → disable all.
 - Settings → Games → Enable game mode.
@@ -92,20 +90,18 @@ Paste the commands into CMD as Administrator:
 - Control Panel → Disable Firewall.
 - Control Panel → Power Plan → Maximum Performance → Power Button Actions → fast startup and hibernation (OFF).
  
->:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
+:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
 :warning: Power Plan *Maximum Performance* can cause big temperatures on *notebooks*.
+
 - Disabling hibernation in cmd (as admin): **powercfg /h off**
 
 :white_medium_square:*Tip: Sleep or Hibernation mode does not reboot the system and does not clear data in memory, so it is worth disabling them.*
-#### 8. Disabling Indexing
+#### 8. Disabling Indexing:
    Explorer → Local Disk C → PCM → Properties → 
   - Uncheck "Allow indexing" and Accept.
-  
-  After disabling it we go back
-  - Tools tab → Disk Optimization and Defragmentation → disabled *(do it manually preferably once a week)*.
 
-#### 9. Performance (Disable animation)
-- Win+R → **sysdm.cpl** → tab **Advanced** → section **Speed** button **Settings* → **Provide best performance** → **Apply**
+#### 9. Performance (Disable animation):
+- Win+R → **sysdm.cpl** → tab **Advanced** → section **Speed** button **Settings** → **Provide best performance** → **Apply**.
 
 #### 10.   Services that can be disabled:
 **DiagTrack; TrkWks; WalletService; wisvc; WpcMonSvc; SysMain; VSS; WerSvc; WSearch, lfsvc, Spooler** (Spooler → if no printer).
@@ -116,7 +112,7 @@ WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Win
 #### 13.  Disabling Windows Copilot:
 WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows Components > Windows Copilot → Disable Windows Copilot select "Enabled".
 #### 14. Disable Windows Defender (use all three items):
-:warning: Disabling Defender will improve performance but reduce security. If you care about security use Defender or disable it but use another AntiVirus.
+:warning: Disabling Defender will improve performance but reduce security. If you care about security use Defender or disable it but use another Antivirus.
 1) WIN+R → regedit → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender** → create a Dword32bit named **DisableAntiSpyware** → value **1**
 3) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program → Disable Microsoft Defender Antivirus Program → **On**.
 4) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program > Persistent Protection → Disable Persistent Protection → **Enabled**.
@@ -132,25 +128,25 @@ WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows
 
 **Второй шаг**:
 >WIN+R → regedit → HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter →ПКМ по папке → Разрешения → Добавить → пишем имя аккаунта → нажмите на Проверить Имена → Дополнительно → где Владелец нажмите Изменить → пишем имя аккаунта → нажмите на Проверить Имена → Применить потом Готово → Поставьте галочку где Полный Контроль → Закройте → измените ActivationType → значение 0.
-#### 17.  Uninstalling Windows 11 widgets 
-Powershell command: **winget uninstall "windows web experience pack "** 
-#### 18.  Disabling "VBS (Core Isolation, Memory Integrity)"
+#### 17.  Uninstalling Windows 11 widgets:
+Powershell command: **winget uninstall "windows web experience pack"** 
+#### 18.  Disabling "VBS (Core Isolation, Memory Integrity)":
 First check if you have virtualization enabled, because if you do, you will have to disable Core isolation from **Windows Security**. If you don't use virtualization, you can disable it in BIOS or disable Core Isolation in Windows.
 >**Windows Security → Device Security → Core Isolation → Core Isolation Information → Memory Integrity → Off**.
-#### 19. Configuring the network adapter
+#### 19. Configuring the network adapter:
   - Device Manager → Your network adapter → 
     - Power Management → Uncheck all checkboxes. 
     - Disable Advanced tab → **Energy-Efficient Ethernet; Gigabit Lite; Green Ethernet; Power Saving Mode; Anything with Wake on magic; Shutdown Wake-On-Lan**.
 
-#### 20.  Switching the video card in MSI mode
+#### 20.  Switching the video card in MSI mode:
 Download [MSI utility v3](https://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file) and run the application as administrator → find your video card and check the "**msi**" box, then click "**Apply**".
-#### 21. Disabling PowerThrottling 
+#### 21. Disabling PowerThrottling:
 :warning:Use for desktop PCs only! On notebook's can cause big temperatures.
 
 >WIN+R → regedit → **Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling** → **PowerThrottlingOff** → **1** .
-#### 22. Disable unnecessary devices in Device Manager.
+#### 22. Disable unnecessary devices in Device Manager:
 Device Manager → Disable: **Microsoft GS Wavetable Synth; Composite Bus Enumerator; Microsoft Hyper-V Virtualization; Microsoft Virtual Drive Enumerator; NDIS Virtual Network; Remote Desktop Device; UMBus Root Bus Enumerator**.
-#### 23. Automatic restart of applications at system startup
+#### 23. Automatic restart of applications at system startup:
 Settings → Accounts → Login Options → Disable the switch "Automatically save my restarted applications and restart them when I log in again."
 
 :white_medium_square:Tip: Windows 11 can save and restart certain applications when you restart your computer and log in. However, if you want to improve the speed of your computer, it is better to disable this feature.
@@ -159,7 +155,7 @@ Settings → Accounts → Login Options → Disable the switch "Automatically sa
 (CMD to enable: netsh interface teredo set state default )
 #### 25.  How to disable the notification icon in the system tray:
 - WIN+R → gpedit.msc → User Configuration > Administrative Templates > Start Menu and Taskbar → Remove Notifications and Action Center → Enabled → Apply/OK
-#### 26. Disabling Wi-Fi Sense
+#### 26. Disabling Wi-Fi Sense:
 :triangular_flag_on_post: *Wi-Fi Sense* was a Windows tool designed to collect data about public Wi-Fi hotspots, such as in coffee shops or public buildings. It collected useful data about the access point, such as speed and signal strength, and loaded it into a database
 - WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config** → **AutoConnectAllowedOEM** → **0**.
 #### 27. Install the programs you need.
@@ -211,7 +207,7 @@ WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DW
 - **To revert** the changes, change the DWORD **Value** data to **0**.
 
 #### 35.  Disabling Hyper-V:
-Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can conflict with third-party apps on your PC, including other virtualization tools such as VMWare Workstation, VirtualBox, and emulators. As a result, you may encounter the Hyper-V detected error when trying to launch an app, PC games, or hardware tuning utilities. So, if you need to use third-party virtualization software, including VMware WorkStation and Virtual Box, you must disable the Hyper-V Hypervisor.
+Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can conflict with third-party apps on your PC, including other virtualization tools such as VMWare Workstation, VirtualBox, and emulators. As a result, you may encounter the Hyper-V error when trying to launch an app, games, or hardware tuning utilities. So, if you need to use third-party virtualization software, including VMware WorkStation and Virtual Box, you must disable the Hyper-V Hypervisor.
 - To disable:
   - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype off**
 - To enable:
