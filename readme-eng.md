@@ -38,7 +38,7 @@ ___
     >>* **Auto accept driver unsigned warning**.
 
 9)  Click **Next** and then **Install**, install the driver from the window that appears.
-10) Customize the panel (photo with settings in the repository)
+10) Customize the panel, photo with settings in the [repository](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel)
 ___
 
 >Tutorial for Radeon Software Slimmer:
