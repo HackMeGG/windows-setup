@@ -212,9 +212,7 @@ Hyper-V - это средство виртуализации, встроенно
   - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype off**
 - Чтобы включить:
   - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype auto**
-#### 36.  Автонастройка сети:
-**СКОРО**
-#### 37.  Дополнительный софт:
+#### 36.  Дополнительный софт:
 - Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
