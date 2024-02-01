@@ -209,9 +209,11 @@ WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DW
 #### 35.  Disabling Hyper-V:
 Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can conflict with third-party apps on your PC, including other virtualization tools such as VMWare Workstation, VirtualBox, and emulators. As a result, you may encounter the Hyper-V error when trying to launch an app, games, or hardware tuning utilities. So, if you need to use third-party virtualization software, including VMware WorkStation and Virtual Box, you must disable the Hyper-V Hypervisor.
 - To disable:
-  - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype off**
+  - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype off**
 - To enable:
-  - WIN+R -> cmd -> **bcdedit /set hypervisorlaunchtype auto**
+  - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype auto**
+#### 36. Windows 11 classic right-click context menu:
+  - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → New *Key* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → Right-click the newly created key and create one more key named **InprocServer32**, and value of string **(Default)** must be blank.
 #### 36.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
