@@ -214,7 +214,7 @@ Hyper-V - это средство виртуализации, встроенно
   - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype auto**
 #### 36. Классическое контекстное меню ПКМ в Windows 11:
   - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → Новый *ключ* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → ПКМ на созданном ключе и создайте еще один ключ с именем **InprocServer32**, и значение строки **(Default)** должно быть пустым.
-#### 36.  Дополнительный софт:
+#### 37.  Дополнительный софт:
 - Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
