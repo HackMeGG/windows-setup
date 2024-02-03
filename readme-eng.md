@@ -128,11 +128,13 @@ WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows
 
 2) Manually: WIN+R → regedit → **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm** → Create a DWORD32bit parameter with the name **OverlayTestMode** and the value **5**.
 #### 16.  Disable Windows GameBar (WIN+G will work), use both steps:
-   **Первый шаг**:
-   >Проводник → Диск С → Windows → System32 → GameBarPresenceWriter.exe → ПКМ → Вкладка Безопасность → Дополнительно → Второй пункт, где Владелец нажмите Изменить → здесь, где пустое место надо написать имя вашего аккаунта (его можно узнать в Параметры → Аккаунты → сверху будет написано имя вашего локального аккаунта или почта если вы ранее вошли в аккаунт) → После чего написали имя нажмите на Проверить Имена → Нажмите Применить потом Готово → нажмите Добавить → Выберите субъект → Опять вводите имя пользователя → Готово → Во вкладке Общие Разрешения поставьте галочку напротив Полный Доступ → Применяем и выходим → Опять заходим → ПКМ → Вкладка Безопасность → Дополнительно → Второй пункт, где Владелец нажмите Изменить → вместо нашего имени вводим NT Service\TrustedInstaller → нажмите на Проверить Имена → ОК → Применить → ОК → ОК → Теперь переименуйте файл (просто добавьте в конце несколько цифр).
+**First Step**:
+- Rename GameBarPresenceWriter.exe. You can use "Take ownership" from the files or do it manually:
+   >Explorer → Disk C → Windows → System32 → GameBarPresenceWriter. exe → right-click → Security tab → Advanced → Second item, where Owner click Edit → here, where there is an empty space you should write the name of your account (you can find it in Settings → Accounts → the name of your local account or mail, will be written at the top if you have previously logged into the account) → After you have entered the name, click Check Names → Click Apply then Done → click Add → Select Subject → Enter the user account name again → Done → In the General Permissions tab, check the Full Access checkbox → Apply and exit → Go in again → right-click → Security tab → Advanced → Second item where Owner click Change → instead of our name enter NT Service\TrustedInstaller → click on Check Names → OK → Apply → OK → OK → OK → Now rename the file (just add some numbers at the end).
    
-  **Второй шаг**:
-   >WIN+R → regedit → HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter →ПКМ по папке → Разрешения → Добавить → пишем имя аккаунта → нажмите на Проверить Имена → Дополнительно → где Владелец нажмите Изменить → пишем имя аккаунта → нажмите на Проверить Имена → Применить потом Готово → Поставьте галочку где Полный Контроль → Закройте → измените ActivationType → значение 0.
+**Second step**:
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter → ActivationType → value 0.
+   >WIN+R → regedit → HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal. PresenceWriter → right-click on the folder → Permissions → Add → write the account name → click on "Check Names" → Advanced → where "Owner" is click on "Change" → retype the account name → click on "Check Names" → Apply then Done → Check the box where Full Control → Close → change the ActivationType → value 0.
 
 #### 17.  Uninstalling Windows 11 widgets:
 Powershell command: **winget uninstall "windows web experience pack"** 
