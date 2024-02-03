@@ -225,6 +225,7 @@ Hyper-V - это средство виртуализации, встроенно
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
+- Хороший бесплатный антивирус: https://download.geo.drweb.com/pub/drweb/cureit/cureit.exe
 - explorerpatcher для настройки/кастомизации Windows 11 :warning:Внимание, могут возникнуть проблемы (краш, синий экран) https://github.com/valinet/ExplorerPatcher
 
 #### БОНУС. Как настроить Windows 11 без учетной записи Microsoft:
