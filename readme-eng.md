@@ -225,6 +225,7 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
+- A good free antivirus: https://download.geo.drweb.com/pub/drweb/cureit/cureit.exe
 - explorerpatcher for Windows 11 customization/customization :warning:Warning, problems may occur (crash, blue screen) https://github.com/valinet/ExplorerPatcher
 
 #### BONUS. How to setup Windows 11 without a Microsoft Account:
