@@ -1,4 +1,4 @@
-# Windows Optimization Guide in English:
+# Windows Basic Optimization Guide in English:
 ## This guide is based on Windows 11 settings, so some settings may not be available or may be named differently in Windows 10.
 #### 0. Install all available updates:
 Go to **Windows Update** and install all available updates.
@@ -76,11 +76,13 @@ Paste the command into CMD as Administrator:
 - Settings → System → Memory → Memory Control → Disable.
 - Settings → System → Sharing → OFF.
 - Settings → Applications → Device Sharing and Application Archive (Off).
+- Settings → Applications → Offline Maps → Disable **Metered Connection** and uncheck **Update automatically when plugged in and on Wi-Fi** 
 - Settings → Windows Security Center → Settings → Notifications → Off.
 - Settings → Special Features → Disable **Visual Effects** and **Transparency Effects**.
 - Settings → System → Display → Graphics → Change default graphics settings → Enable HAGS and optimization for windows games.
 - Settings → System → Display → Set the maximum refresh rate of your monitor.
 - Settings → Windows Security Center → Reputation-based protection → All off.
+- Settings → Network & internet → Ethernet → Metered Conection → Disable.
 - Settings → Windows Security Center → **Application and Browser Management** → **Reputation-based Protection** → **Reputation-based Protection Settings** → Disable all items.
 - Settings → Update Center → Advanced Options → Delivery Optimization → Disable.
 #### 7. Control Panel:
@@ -111,11 +113,11 @@ WIN+R → regedit → **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Ex
 WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Application Privacy → Allow Windows applications to run in the background → "Enabled" and set "Force Deny" below.
 #### 13.  Disabling Windows Copilot:
 WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows Components > Windows Copilot → Disable Windows Copilot select "Enabled".
-#### 14. Disable Windows Defender (use all three items):
+#### 14. Disable Windows Defender (use all steps):
 :warning: Disabling Defender will improve performance but reduce security. If you care about security use Defender or disable it but use another Antivirus.
 1) WIN+R → regedit → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender** → create a Dword32bit named **DisableAntiSpyware** → value **1**
-3) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program → Disable Microsoft Defender Antivirus Program → **On**.
-4) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program > Persistent Protection → Disable Persistent Protection → **Enabled**.
+2) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program → Disable Microsoft Defender Antivirus Program → **On**.
+3) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program > Persistent Protection → Disable Persistent Protection → **Enabled**.
 #### 15.  Disabling MPO:
 1) Quick way: download and run the [disable_mpo file from Nvidia website](https://nvidia.custhelp.com/app/answers/detail/a_id/5157)
    
@@ -214,9 +216,16 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
   - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype auto**
 #### 36. Windows 11 classic right-click context menu:
   - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → New *Key* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → Right-click the newly created key and create one more key named **InprocServer32**, and value of string **(Default)** must be blank.
-#### 37.  Additional software:
+#### 37. Stop Windows Spying:
+:warning: It will broke Windows Defender Smart App Control! If you use Defender skip this step.
+- WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Allow Diagnostic Data → **Enabled** → **Diagnostic Data off**.
+- WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Limit optional diagnostic data for Desktop Analytics → **Enabled** → **Disable Desktop Analytics collection**.
+#### 38.  Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
 - explorerpatcher for Windows 11 customization/customization :warning:Warning, problems may occur (crash, blue screen) https://github.com/valinet/ExplorerPatcher
+
+#### BONUS. How to setup Windows 11 without a Microsoft Account:
+On the setup page, where is **"Sign In in your Microsoft account"** click **SHIFT + F10, (on notebooks try FN + SHIFT + F10)**. It will open a CMD, write the command **ncpa.cpl** that will open *Network Connections from Control Panel*, right-click on your connection and click **Disable**. After that, write the command **oobe\bypassnro** and your computer will restart. It will start from the beginning. From the page with internet connection click **"I don't have internet"** and **"Continue with limited setup"** buttons. That's all, now enter a computer name, give a password, or leave it blank. On the page **"Privacy settings for your device"** I recommend disabling all of them.
