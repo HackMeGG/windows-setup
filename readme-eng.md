@@ -64,8 +64,9 @@ ___
 * Optionally install [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
 ___
 #### 5. Checking system files integrity:
-Paste the command into CMD as Administrator:
+Paste the commands into CMD as Administrator:
 - **sfc /scannow**
+- **DISM /Online /Cleanup-Image /RestoreHealth**
 #### 6. Settings: 
 - Uninstall apps you don't use: Settings → Apps → Installed Apps.
 - Windows Search Settings → Find My Files → Classic.
@@ -75,6 +76,7 @@ Paste the command into CMD as Administrator:
 - Settings → System → Notifications (uncheck all checkboxes) → Advanced settings → uncheck all checkboxes.
 - Settings → System → Memory → Memory Control → Disable.
 - Settings → System → Sharing → OFF.
+- Settings → Display → Scale → 100 (recommended).
 - Settings → Applications → Device Sharing and Application Archive (Off).
 - Settings → Applications → Offline Maps → Disable **Metered Connection** and uncheck **Update automatically when plugged in and on Wi-Fi** 
 - Settings → Windows Security Center → Settings → Notifications → Off.
@@ -105,20 +107,21 @@ Paste the command into CMD as Administrator:
 #### 9. Performance (Disable animation):
 - Win+R → **sysdm.cpl** → tab **Advanced** → section **Speed** button **Settings** → **Provide best performance** → **Apply**.
 
-#### 10.   Services that can be disabled:
-**DiagTrack; TrkWks; WalletService; wisvc; WpcMonSvc; SysMain; VSS; WerSvc; WSearch, lfsvc, Spooler** (Spooler → if no printer).
-#### 11.  Disable results from the internet in search:
+#### 10. Services that can be disabled:
+**DiagTrack; TrkWks; WalletService; wisvc; WpcMonSvc; TapiSrv; PhoneSvc; MapsBroker; SysMain; VSS; WerSvc; WSearch; lfsvc; WbioSrvc (if you dont use unlock with face or fingerprint) Spooler (Spooler → if no printer); All Hyper-V services (if you dont use it); Sensor Service + Sensor Data Service; Sensor Monitoring Service (Disable that 3 services only on Desktop PC)**
+
+#### 11. Disable results from the internet in search:
 WIN+R → regedit → **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer** → Create a DWORD32bit parameter named **DisableSearchBoxSuggestions** and with a value of **1**.
-#### 12.  Disable background applications: 
+#### 12. Disable background applications: 
 WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Application Privacy → Allow Windows applications to run in the background → "Enabled" and set "Force Deny" below.
-#### 13.  Disabling Windows Copilot:
+#### 13. Disabling Windows Copilot:
 WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows Components > Windows Copilot → Disable Windows Copilot select "Enabled".
 #### 14. Disable Windows Defender (use all steps):
 :warning: Disabling Defender will improve performance but reduce security. If you care about security use Defender or disable it but use another Antivirus.
 1) WIN+R → regedit → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender** → create a Dword32bit named **DisableAntiSpyware** → value **1**
 2) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program → Disable Microsoft Defender Antivirus Program → **On**.
 3) WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus Program > Persistent Protection → Disable Persistent Protection → **Enabled**.
-#### 15.  Disabling MPO:
+#### 15. Disabling MPO:
 1) Quick way: download and run the [disable_mpo file from Nvidia website](https://nvidia.custhelp.com/app/answers/detail/a_id/5157)
    
 :white_check_mark:I recommend the second method, manually.
@@ -127,9 +130,10 @@ WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows
 #### 16.  Disable Windows GameBar (WIN+G will work), use both steps:
    **Первый шаг**:
    >Проводник → Диск С → Windows → System32 → GameBarPresenceWriter.exe → ПКМ → Вкладка Безопасность → Дополнительно → Второй пункт, где Владелец нажмите Изменить → здесь, где пустое место надо написать имя вашего аккаунта (его можно узнать в Параметры → Аккаунты → сверху будет написано имя вашего локального аккаунта или почта если вы ранее вошли в аккаунт) → После чего написали имя нажмите на Проверить Имена → Нажмите Применить потом Готово → нажмите Добавить → Выберите субъект → Опять вводите имя пользователя → Готово → Во вкладке Общие Разрешения поставьте галочку напротив Полный Доступ → Применяем и выходим → Опять заходим → ПКМ → Вкладка Безопасность → Дополнительно → Второй пункт, где Владелец нажмите Изменить → вместо нашего имени вводим NT Service\TrustedInstaller → нажмите на Проверить Имена → ОК → Применить → ОК → ОК → Теперь переименуйте файл (просто добавьте в конце несколько цифр).
+   
+  **Второй шаг**:
+   >WIN+R → regedit → HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter →ПКМ по папке → Разрешения → Добавить → пишем имя аккаунта → нажмите на Проверить Имена → Дополнительно → где Владелец нажмите Изменить → пишем имя аккаунта → нажмите на Проверить Имена → Применить потом Готово → Поставьте галочку где Полный Контроль → Закройте → измените ActivationType → значение 0.
 
-**Второй шаг**:
->WIN+R → regedit → HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter →ПКМ по папке → Разрешения → Добавить → пишем имя аккаунта → нажмите на Проверить Имена → Дополнительно → где Владелец нажмите Изменить → пишем имя аккаунта → нажмите на Проверить Имена → Применить потом Готово → Поставьте галочку где Полный Контроль → Закройте → измените ActivationType → значение 0.
 #### 17.  Uninstalling Windows 11 widgets:
 Powershell command: **winget uninstall "windows web experience pack"** 
 #### 18.  Disabling "VBS (Core Isolation, Memory Integrity)":
@@ -155,7 +159,7 @@ Settings → Accounts → Login Options → Disable the switch "Automatically sa
 #### 24.  Disable Teredo (ipv6 feature causing latency):
 - WIN+R → CMD → netsh interface teredo set state disabled
 (CMD to enable: netsh interface teredo set state default )
-#### 25.  How to disable the notification icon in the system tray:
+#### 25.  Disabling notification icon in the system tray:
 - WIN+R → gpedit.msc → User Configuration > Administrative Templates > Start Menu and Taskbar → Remove Notifications and Action Center → Enabled → Apply/OK
 #### 26. Disabling Wi-Fi Sense:
 :triangular_flag_on_post: *Wi-Fi Sense* was a Windows tool designed to collect data about public Wi-Fi hotspots, such as in coffee shops or public buildings. It collected useful data about the access point, such as speed and signal strength, and loaded it into a database
@@ -188,9 +192,9 @@ You can disable FSO globally so you don't have to disable it for each applicatio
 WIN + R → regedit → **HKEY_CURRENT_USER\System\GameConfigStore** → **GameDVR_FSEBehavior** (*Dword32bit*)→ value: **2** (off) / **0** (on).
 #### 31. Disable Microsoft Store apps auto-update:
 **Microsoft Store** → click the profile icon → **Application Settings** → **Application Update** → switch to "**Off**".
-#### 32.  Disable sticky keys:
+#### 32. Disable sticky keys:
 Control Panel → Ease of Access → Ease of Access Center → Make the Keyboard Easier To Use → Under “Make it Easier To Type” → uncheck the “Turn on Sticky Keys” → Apply.
-#### 33.  Enabling ReBar:
+#### 33. Enabling ReBar:
 ReBar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD ReBar is named SAM, it's the same thing as ReBar.
 
 :warning: To use ReBar, you need a **NVIDIA GeForce RTX 30-series** or **AMD RX 6000 series**, a compatible **CPU**, compatible **motherboard**.
@@ -204,26 +208,39 @@ ReBar (resizable BAR) enables more efficient communication between the CPU and t
     - Re-Size BAR Support
 - To check if it's working check in NVIDIA Control Panle or in AMD Control Panel. 
 
-#### 34.  Windows 11 wallpaper compression:
-By default, Windows will compress images to around 80-85% before you set them as wallpapers. However, this can sometimes result in blurry images. It doesn't affect performance.
-- **To disable compression**:
-WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DWORD(32-bit) **JPEGImportQuality** → Choose **Base** as **Decimal** and click **OK**. After change the **Value** to **100**. Restart PC and re-upload your background.
-- **To revert** the changes, change the DWORD **Value** data to **0**.
-
-#### 35.  Disabling Hyper-V:
+#### 34. Disabling Hyper-V:
 Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can conflict with third-party apps on your PC, including other virtualization tools such as VMWare Workstation, VirtualBox, and emulators. As a result, you may encounter the Hyper-V error when trying to launch an app, games, or hardware tuning utilities. So, if you need to use third-party virtualization software, including VMware WorkStation and Virtual Box, you must disable the Hyper-V Hypervisor.
 - To disable:
   - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype off**
 - To enable:
   - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype auto**
-#### 36. Windows 11 classic right-click context menu:
-  - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → New *Key* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → Right-click the newly created key and create one more key named **InprocServer32**, and value of string **(Default)** must be blank.
-#### 37. Stop Windows Spying:
+
+#### 35. Stop Windows Spying:
 :warning: It will broke Windows Defender Smart App Control! If you use Defender skip this step.
 - WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Allow Diagnostic Data → **Enabled** → **Diagnostic Data off**.
 - WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Limit optional diagnostic data for Desktop Analytics → **Enabled** → **Disable Desktop Analytics collection**.
-#### 38.  Additional software:
+
+#### 36. Setup Audio:
+Settings → System → Sound → More sound settings → keep only your speaker/headset and microphone, rest disable. Set your speaker/headset device to 24bit 96000Hz. In "Communications" tab set "Do nothing". Double-click on your output device (headset/speaker) go to "Advanced" and uncheck "Allow apps to take exclusive control of this device", apply changes.
+
+#### 37. Defrag & Trim:
+Leave enable or disable but do it manually once at week, defrag your HDD's and trim your SSD's. 
+To open menu with that setting:
+-  This PC → right click on a disk → properties → tools → Optimize and defrag drive.
+
+#### 38. Windows 11 classic right-click context menu & disable menu show delay:
+  - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → New *Key* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → Right-click the newly created key and create one more key named **InprocServer32**, and value of string **(Default)** must be blank.
+  - WIN+R → HKEY_CURRENT_USER\Control Panel\Desktop → **MenuShowDelay** → **0**. 
+
+#### 39.  Windows 11 wallpaper compression:
+By default, Windows will compress images to around 80-85% before you set them as wallpapers. However, this can sometimes result in blurry images. It doesn't affect performance.
+- **To disable compression**:
+WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DWORD(32-bit) **JPEGImportQuality** → Choose **Base** as **Decimal** and click **OK**. After change the **Value** to **100**. Restart PC and re-upload your background.
+- **To revert** the changes, change the DWORD **Value** data to **0**.  
+
+#### Additional software:
 - Activating Windows Forever (Powershell command): **irm https://massgrave.dev/get | iex**
+- Defender Remover: https://github.com/ionuttbara/windows-defender-remover/releases
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
