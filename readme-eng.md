@@ -166,6 +166,8 @@ Settings → Accounts → Login Options → Disable the switch "Automatically sa
 - WIN+R → **%temp%** → Delete everything.
 - WIN+R → **temp** → Delete everything.
 - WIN+R → **prefetch** → Delete everything.
+- This PC → Disk C → Windows → SoftwareDistribution → Download → Delete everything.
+- Search for **Disk Cleanup** → Disk C → Pin them all → OK.
 - WIN+R → **cmd** → ipconfig /flushdns
 #### 30.  Disable FSO:
 **Fullscreen Exclusive (FSE)** mode gives your game complete ownership of the display and allocation of resources of your graphics card.
