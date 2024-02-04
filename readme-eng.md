@@ -92,10 +92,11 @@ Paste the commands into CMD as Administrator:
 - Control Panel → System and Security → Change UAC settings → Never Notify.
 - Control Panel → Network Control Center → Change Adapter Settings → PCM on your LAN/WIFI adapter → Properties → disable everything except QoS and IPv4.
 - Control Panel → Disable Firewall.
-- Control Panel → Power Plan → Maximum Performance → Power Button Actions → fast startup and hibernation (OFF).
+- Control Panel → Power Plan → Maximum Performance (for Intel) / Ryzen High performance (for AMD) → Power Button Actions → fast startup and hibernation (OFF).
  
-:warning:If there is no "Maximum Performance" mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
+:warning:If there is no **"Maximum Performance"** mode then write in cmd (as admin): **powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61**
 :warning: Power Plan *Maximum Performance* can cause big temperatures on *notebooks*.
+:warning: **Ryzen Power Plans** will appear after you install **chipset** driver and selected Ryzen Power Plans.
 
 - Disabling hibernation in cmd (as admin): **powercfg /h off**
 
