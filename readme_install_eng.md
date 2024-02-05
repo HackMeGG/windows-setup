@@ -6,6 +6,8 @@ ISO image of the system can be taken from the first way or from other sites of t
 
 
 #### :small_blue_diamond:First Way - Media Creation Tool
+:heavy_check_mark:Media Creation Tool is an official installer, easy to use, always downloads the latest version of Windows. I recommend using this method.
+
 Download the Media Creation Tool:
 - For [**Windows 10**](https://www.microsoft.com/en-us/software-download/windows10)
 - For [**Windows 11**](https://www.microsoft.com/software-download/windows11)
