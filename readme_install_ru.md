@@ -6,6 +6,8 @@ ISO образ системы можно брать из первого спос
 
 
 #### :small_blue_diamond:Первый способ - Media Creation Tool
+:heavy_check_mark:Media Creation Tool является официальным установщиком, его легко использовать, всегда скачивается последняя версия Windows. Рекомендую использовать этот метод.
+
 Скачайте Media Creation Tool:
 - Для [**Windows 10**](https://www.microsoft.com/ru-ru/software-download/windows10)
 - Для [**Windows 11**](https://www.microsoft.com/ru-ru/software-download/windows11)
