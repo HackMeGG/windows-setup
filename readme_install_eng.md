@@ -33,18 +33,18 @@ Click "OK" to confirm that the USB flash drive will be cleaned.
 After performing these steps, the Rufus tool will create UEFI-enabled Windows boot media.
 
 #### :small_blue_diamond:Third way - Ventoy
-Download [Ventoy](https://github.com/ventoy/Ventoy/releases) and ISO image.
-white:_check_mark:With *Ventoy* you can download multiple images, let’s say Windows 10 and 11. The main thing would be enough space on the external drive.
-Start Ventoy2Disk. You can select a language from the menu at the top of the program.
-In the "Device" tab, select your external drive.
-To install *Windows 11* make sure that the "Options" tab has a checkmark for *"Secure Boot" support*.
-Click Install.
-The drive will split into two sections. One will have Ventoy files and the other will be empty.
-Copy the ISO boot files to an empty partition.
-:Warning: If, when booting from a flash drive, when selecting an ISO image, an error **"Verification Failed: (15) Access Denied"***: Press "OK" -> Press any key -> "Key from disk-> "VEFI" -> "ENROLL_THIS_KEYIN__> Enronker -> Continue -kmer. The PC reboot, re-select this ISO image and now it will boot normally. 
+Download [Ventoy](https://github.com/ventoy/Ventoy/releases) and ISO image.\
+:white_check_mark:With *Ventoy* you can download multiple images, let’s say Windows 10 and 11. The main thing would be enough space on the external drive.\
+Start Ventoy2Disk. You can select a language from the menu at the top of the program.\
+In the "Device" tab, select your external drive.\
+To install *Windows 11* make sure that the "Options" tab has a checkmark for *"Secure Boot" support*.\
+Click Install.\
+The drive will split into two sections. One will have Ventoy files and the other will be empty.\
+Copy the ISO boot files to an empty partition.\
+:warning: If, when booting from a flash drive, when selecting an ISO image, an error **"Verification Failed: (15) Access Denied"**: Press "OK" -> Press any key -> "Key from disk-> "VEFI" -> "ENROLL_THIS_KEYIN__> Enronker -> Continue -kmer. The PC reboot, re-select this ISO image and now it will boot normally. 
 
 #### :heavy_exclamation_mark:Once Windows is installed, there are no other partitions:
-Right click on «Start» and select «Disk Management».
+Right click on «Start» and select «Disk Management».\
 All disks and partitions will appear.
 - Note whether there is *section* without letter. If you have found the desired partition then click on it with the right mouse button and select "Change drive letter or path to disk", after click «Add». Select a letter and press "OK".
 - If the partition is "Not Distributed", right-click the unallocated area and select "Create Simple Volume".
