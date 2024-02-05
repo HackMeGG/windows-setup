@@ -37,15 +37,15 @@ ___
 ___
 #### :small_blue_diamond:The third method is Ventoy.
 
-:white_check_mark:With the help of *Ventoy* you can download several images, let's say Windows 10 and 11. The main thing is to have enough space on the external drive.
+:white_check_mark:With *Ventoy* you can download several images, let's say Windows 10 and 11. The main thing is to have enough space on the external drive.
 
 1. Download [Ventoy](https://github.com/ventoy/Ventoy/releases) and ISO image.
 2. Run Ventoy2Disk. In the program at the top of the menu you can select the language.
 3. In the "Device" tab, select your external drive.
 To install *Windows 11*, make sure that *"Support Secure Boot "* is checked in the "Options" tab.
-4. Click install.
+1. Click install.
 The drive will split into two partitions. One will have the Ventoy files on it and the other will be empty.
-5. Copy the ISO boot files to the empty partition.
+1. Copy the ISO boot files to the empty partition.
 
 :warning: If you get an error **"Verification Failed: (15) Access Denied "** when selecting the ISO image when booting from the flash drive: \
 Press "OK" -> Press any key -> "Enroll key from disk" -> "VTOYEFI" -> "ENROLL_THIS_KEY_IN_MOKMANAGER.cer" -> Continue -> Yes -> Reboot. PC will reboot, re-select this ISO image and now it will boot normally. 
