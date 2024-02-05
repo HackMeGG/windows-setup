@@ -10,9 +10,9 @@
 ___
 [Гайд по настройке системы](https://github.com/HackMeGG/windows11-setup/blob/main/readme-ru.md).
 ___
-[Мои игровые настройки](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup).
+[Мои игровые настройки](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup.md).
 ___
-[Параметры BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios).
+[Параметры BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios.md).
 
 ### ENG:
 These instructions are for Windows users who want to improve the performance of their games. It doesn't mean that you will have 100 fps more, but the stability of the system will become much better.
@@ -21,8 +21,8 @@ To use this instruction, just follow the step-by-step instructions. Before makin
 
 [Create a bootable drive to install Windows](https://github.com/HackMeGG/windows11-setup/blob/main/readme_install_eng.md).
 ___
-[System setup guide](https://github.com/HackMeGG/windows11-setup/blob/main/readme-eng).
+[System setup guide](https://github.com/HackMeGG/windows11-setup/blob/main/readme-eng.md).
 ___
-[My games settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup).
+[My games settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup.md).
 ___
-[BIOS settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios).
+[BIOS settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-bios.md).
