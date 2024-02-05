@@ -7,7 +7,7 @@ ISO image of the system can be taken from the first way or from other sites of t
 
 #### :small_blue_diamond:First Way - Media Creation Tool
 Download the Media Creation Tool:
-- For [**Windows 10**](https://www.microsoft.com/ru/software-download/windows10)
+- For [**Windows 10**](https://www.microsoft.com/en-us/software-download/windows10)
 - For [**Windows 11**](https://www.microsoft.com/software-download/windows11)
 
 After running Microsoft, accept the license terms, select **«Create Installation Media»**, then specify the language and version of Windows you want to install.
