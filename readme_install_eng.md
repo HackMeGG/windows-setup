@@ -56,5 +56,10 @@ All disks and partitions will appear.
 - Note whether there is *section* without letter. If you have found the desired partition then click on it with the right mouse button and select "Change drive letter or path to disk", after click «Add». Select a letter and press "OK".
 - If the partition is "Not Distributed", right-click the unallocated area and select "Create Simple Volume".
 
-#### Example of UEFI and Legacy BIOS
+#### How do I know if my bios is Legacy or UEFI?
+- :small_orange_diamond:The easiest way is to go into the BIOS and look at the interface, if it's outdated where you don't even use a mouse, it's probably Legacy. Also see the photo below for a good example.
+- GPT is a more modern format, it is used on modern PCs with UEFI bios.
+- MBR is an old disk format where you cannot create more than 3 partitions (suitable for Legacy BIOS).
+- If you have UEFI, don't forget to disable CSM function in bios.
+
 ![Example of UEFI and Legacy BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/bios-legacy-uefi.jpg)
