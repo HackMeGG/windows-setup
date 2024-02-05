@@ -41,7 +41,7 @@ To install *Windows 11* make sure that the "Options" tab has a checkmark for *"S
 Click Install.\
 The drive will split into two sections. One will have Ventoy files and the other will be empty.\
 Copy the ISO boot files to an empty partition.\
-:warning: If, when booting from a flash drive, when selecting an ISO image, an error **"Verification Failed: (15) Access Denied"**: Press "OK" -> Press any key -> "Key from disk-> "VEFI" -> "ENROLL_THIS_KEYIN__> Enronker -> Continue -kmer. The PC reboot, re-select this ISO image and now it will boot normally. 
+:warning: If, when booting from a flash drive, when selecting an ISO image, an error **"Verification Failed: (15) Access Denied"**: Press "OK" -> Press any key -> "Enroll key from disk" -> "VTOYEFI" -> ""ENROLL_THIS_KEY_IN_MOKMANAGER.cer" -> Continue -> Yes -> Reboot. The PC will reboot, re-select this ISO image and now it will boot normally. 
 
 #### :heavy_exclamation_mark:Once Windows is installed, there are no other partitions:
 Right click on «Start» and select «Disk Management».\
