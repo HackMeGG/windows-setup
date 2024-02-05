@@ -58,4 +58,4 @@ ___
 - Если раздел является "Не распределена" то кликните по нераспределённой области правой кнопкой мыши и выберите "Создать простой том".
 
 #### Пример BIOS UEFI и Legacy
-![Пример BIOS UEFI и Legacy](https://github.com/HackMeGG/windows11-setup/blob/main/bios-legacy-uefi.jpg "Text to show on mouseover")
+![Пример BIOS UEFI и Legacy](https://github.com/HackMeGG/windows11-setup/blob/main/bios-legacy-uefi.jpg)
