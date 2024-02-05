@@ -51,10 +51,11 @@ The drive will split into two partitions. One will have the Ventoy files on it a
 Press "OK" -> Press any key -> "Enroll key from disk" -> "VTOYEFI" -> "ENROLL_THIS_KEY_IN_MOKMANAGER.cer" -> Continue -> Yes -> Reboot. PC will reboot, re-select this ISO image and now it will boot normally. 
 ___
 #### :heavy_exclamation_mark:Once Windows is installed, there are no other partitions:
-Right click on «Start» and select «Disk Management».\
+Right click on "Start" and select "Disk Management".\
 All disks and partitions will appear.
-- Note whether there is *section* without letter. If you have found the desired partition then click on it with the right mouse button and select "Change drive letter or path to disk", after click «Add». Select a letter and press "OK".
+- Note whether there is *section* without letter. If you have found the desired partition then click on it with the right mouse button and select "Change drive letter or path to disk", after click "Add". Select a letter and press "OK".
 - If the partition is "Not Distributed", right-click the unallocated area and select "Create Simple Volume".
+___
 
 #### How do I know if my bios is Legacy or UEFI?
 - :small_orange_diamond:The easiest way is to go into the BIOS and look at the interface, if it's outdated where you don't even use a mouse, it's probably Legacy. Also see the photo below for a good example.
