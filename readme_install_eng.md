@@ -55,3 +55,6 @@ Right click on «Start» and select «Disk Management».\
 All disks and partitions will appear.
 - Note whether there is *section* without letter. If you have found the desired partition then click on it with the right mouse button and select "Change drive letter or path to disk", after click «Add». Select a letter and press "OK".
 - If the partition is "Not Distributed", right-click the unallocated area and select "Create Simple Volume".
+
+#### Example of UEFI and Legacy BIOS
+![Example of UEFI and Legacy BIOS](https://github.com/HackMeGG/windows11-setup/blob/main/bios-legacy-uefi.jpg)
