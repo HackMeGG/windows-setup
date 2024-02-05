@@ -8,7 +8,7 @@ ISO образ системы можно брать из первого спос
 #### :small_blue_diamond:Первый способ - Media Creation Tool
 Скачайте Media Creation Tool:
 - Для [**Windows 10**](https://www.microsoft.com/ru-ru/software-download/windows10)
-- Для [**Windows 11**](https://www.microsoft.com/software-download/windows11)
+- Для [**Windows 11**](https://www.microsoft.com/ru-ru/software-download/windows11)
 
 После запуска утилиты Майкрософт, примите условия лицензии, выберите пункт **«Создать установочный носитель»**, затем укажите язык и версию Windows которую хотите установить.
 В следующем окне будут два выбора:
