@@ -57,6 +57,10 @@ All disks and partitions will appear.
 - If the partition is "Not Distributed", right-click the unallocated area and select "Create Simple Volume".
 ___
 
+#### How to setup Windows 11 without a Microsoft Account:
+On the setup page, where is **"Sign In in your Microsoft account"** click **SHIFT + F10, (on notebooks try FN + SHIFT + F10)**. It will open a CMD, write the command **ncpa.cpl** that will open *Network Connections from Control Panel*, right-click on your connection and click **Disable**. After that, write the command **oobe\bypassnro** and your computer will restart. It will start from the beginning. From the page with internet connection click **"I don't have internet"** and **"Continue with limited setup"** buttons. That's all, now enter a computer name, give a password, or leave it blank. On the page **"Privacy settings for your device"** I recommend disabling all of them.
+___
+
 #### How do I know if my bios is Legacy or UEFI?
 - :small_orange_diamond:The easiest way is to go into the BIOS and look at the interface, if it's outdated where you don't even use a mouse, it's probably Legacy. Also see the photo below for a good example.
 - GPT is a more modern format, it is used on modern PCs with UEFI bios.
