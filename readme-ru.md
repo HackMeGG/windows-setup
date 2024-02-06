@@ -121,7 +121,24 @@ ___
 - Win+R → **sysdm.cpl** → вкладка **Дополнительно** → раздел **Быстродействие** кнопка **Параметры** → **Обеспечить наилучшее быстродействие** → **Применить**.
 
 #### 12.   Службы которые можно отключить:
-**DiagTrack; TrkWks; WalletService; wisvc; WpcMonSvc; TapiSrv; PhoneSvc; MapsBroker; SysMain; VSS; WerSvc; WSearch; lfsvc; WbioSrvc (если вы не используете разблокировку по лицу или отпечатку пальца) Spooler (Spooler → если нет принтера); All Hyper-V services (если вы не используете его); Sensor Service + Sensor Data Service; Sensor Monitoring Service (Отключите эти 3 службы только на настольном компьютере)**
+
+- DiagTrack
+- TrkWks
+- WalletService 
+- wisvc
+- WpcMonSvc
+- TapiSrv
+- PhoneSvc
+- MapsBroker
+- SysMain
+- VSS
+- WerSvc
+- WSearch
+- lfsvc
+- WbioSrvc (если вы не используете разблокировку по лицу или отпечатку пальца) 
+- Spooler (если нет принтера)
+- All Hyper-V services (если вы не используете его)
+- Sensor Service; Sensor Data Service; Sensor Monitoring Service (Отключите эти 3 службы только на настольном компьютере)
 
 #### 13.  Отключите результаты из интернета в поиске:
 WIN+R → regedit → **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer** → Создаём параметр DWORD32бит с названием **DisableSearchBoxSuggestions** и со значением **1**.
