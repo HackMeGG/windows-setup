@@ -260,5 +260,5 @@ ReBar (resizable BAR) обеспечивает более эффективное
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
 - Defender Remover: https://github.com/ionuttbara/windows-defender-remover/releases
 - Хороший бесплатный антивирус: https://download.geo.drweb.com/pub/drweb/cureit/cureit.exe
-- explorerpatcher для настройки/кастомизации Windows 11 :warning:Внимание, могут возникнуть проблемы (краш, синий экран) https://github.com/valinet/ExplorerPatcher
+- explorerpatcher для кастомизации Windows 11 :warning:Внимание, могут возникнуть проблемы: https://github.com/valinet/ExplorerPatcher
 - Office: https://massgrave.dev/genuine-installation-media.html
