@@ -12,7 +12,6 @@
 #### 4. Установка драйвера на ГПУ:
    - Сначала удаляем через DDU дефолтный драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
    - Установите драйвер на ГПУ через Nvcleanstall (для nvidia) или Radeon Software Slimmer (для AMD).
-___
   >:arrow_right:Инструкция по Nvcleanstall:
 1) Скачиваем последний драйвер GeForce Game Ready Driver для вашего ГПУ.
 2) Запускаем Nvcleanstall.
@@ -66,7 +65,7 @@ ___
 * Установить [.Net Framework 8.0.1](https://download.visualstudio.microsoft.com/download/pr/f18288f6-1732-415b-b577-7fb46510479a/a98239f751a7aed31bc4aa12f348a9bf/windowsdesktop-runtime-8.0.1-win-x64.exe)
 * Установить [7zip](https://www.7-zip.org/)
 * По желанию установить [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
-___
+
 #### 5. Проверка файлов системы:
 Вставьте команду в CMD от имени Администратора:
 - **sfc /scannow**
