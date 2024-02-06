@@ -3,17 +3,17 @@
 #### 0. Установка всех доступных обновлении:
 Перейдите в раздел **Обновления Windows** и установите все доступные обновления.
 #### 1. Активация Windows навсегда 
-Скопировать команду в Powershell без скобок: "**irm https://massgrave.dev/get | iex**".
+Скопировать команду в *Powershell* (от имени администратора) без скобок: "**irm https://massgrave.dev/get | iex**".
 #### 2. Отключаем автоматическое обновления драйверов:
 - WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → Создаём раздел **WindowsUpdate** → И в нём создаём параметр Dword32 с названием **ExcludeWUDriversInQualityUpdate** со значением **1**.
 - Дальше переходим по **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching** находим **SearchOrderConfig** и выставляем значение **0**. 
-#### 2. Установка драйверов:
+#### 3. Установка драйверов:
  1) Установите последние драйвера на чипсет, лан, вайфай & блютуз, звук. Их можно взять с сайта материнской платы.
-#### 3. Установка драйвера на ГПУ:
+#### 4. Установка драйвера на ГПУ:
    - Сначала удаляем через DDU дефолтный драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
    - Установите драйвер на ГПУ через Nvcleanstall (для nvidia) или Radeon Software Slimmer (для AMD).
 ___
-### Инструкция по Nvcleanstall:
+  >:arrow_right:Инструкция по Nvcleanstall:
 1) Скачиваем последний драйвер GeForce Game Ready Driver для вашего ГПУ.
 2) Запускаем Nvcleanstall.
 3) Жмём на раздел Use driver files on disk и указываем путь до драйвера.
@@ -43,7 +43,7 @@ ___
 10) Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel)
 ___
 
->Инструкция по Radeon Software Slimmer:
+>:arrow_right:Инструкция по Radeon Software Slimmer:
 1) Скачиваем последний драйвер Recommended с сайта AMD.
 2) Запускаем Radeon Software Slimmer.
 3) Жмём на раздел **Pre Install** и указываем путь до драйвера.
@@ -59,7 +59,7 @@ ___
 8) Настроить панель (фото с настройками в репозитории)
 ___
 
-#### 4. Установка нужного софта:
+#### 5. Установка нужного софта:
 * Установить пакет [Visual C++ AIO](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 * Установить [DirectX](https://www.microsoft.com/en-us/Download/confirmation.aspx?id=35)
 * Установить [.Net Framework 4.8.1](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
