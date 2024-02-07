@@ -262,7 +262,8 @@ Hyper-V - это средство виртуализации, встроенно
 - Служба политики диагностики (DPS)
 - Узел службы диагностики (WdiServiceHost)
 - Узел системы диагностики (WdiSystemHost)
-Потом менюем значение в реестре:
+
+Потом меняем значение в реестре:
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\DiagLog → Start → 0
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\WdiContextLog → Start → 0
 
