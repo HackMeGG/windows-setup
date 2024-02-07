@@ -255,7 +255,8 @@ First, you need to disable the services:
 - Diagnostic Policy Service (DPS)
 - Diagnostic Service Host (WdiServiceHost)
 - Diagnostic system node (WdiSystemHost).
-Then menu the value in the registry:
+
+Then change the values in the registry:
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\DiagLog → Start → 0.
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\WdiContextLog → Start → 0
 
