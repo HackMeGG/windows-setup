@@ -236,30 +236,41 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
 - To enable:
   - WIN+R → cmd → **bcdedit /set hypervisorlaunchtype auto**
 
-#### 36. Stop Windows Spying:
+#### 36. Stop Windows Spying №1:
 :warning: It will broke Windows Defender Smart App Control! If you use Defender skip this step.
 - WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Allow Diagnostic Data → **Enabled** → **Diagnostic Data off**.
 - WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Limit optional diagnostic data for Desktop Analytics → **Enabled** → **Disable Desktop Analytics collection**.
-
-#### 37. Setup Audio:
+#### 37. Stop Windows Spying №2:
+For this we will need the program **[O&O ShutUp10++](https://www.oo-software.com/en/shutup10)**. We will use it to disable some of the Windows 10 and 11 spyware services.
+#### 38. Setup Audio:
 Settings → System → Sound → More sound settings → keep only your speaker/headset and microphone, rest disable. Set your speaker/headset device to 24bit 96000Hz. In "Communications" tab set "Do nothing". Double-click on your output device (headset/speaker) go to "Advanced" and uncheck "Allow apps to take exclusive control of this device", apply changes.
 
-#### 38. Defrag & Trim:
+#### 39. Defrag & Trim:
 Leave enable or disable but do it manually once at week, defrag your HDD's and trim your SSD's. 
 To open menu with that setting: \
 -  This PC → right click on a disk → properties → tools → Optimize and defrag drive.
+#### 40. Disabling Windows Diagnostics:
+The Diagnostic Service allows you to detect and troubleshoot problems related to Windows. The services are just running all the time and are of no use.
+First, you need to disable the services:
+- Diagnostic Policy Service (DPS)
+- Diagnostic Service Host (WdiServiceHost)
+- Diagnostic system node (WdiSystemHost).
+Then menu the value in the registry:
+- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\DiagLog → Start → 0.
+- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\WdiContextLog → Start → 0
 
-#### 39. Windows 11 classic right-click context menu & disable menu show delay:
+:warning:After that, the network utilization indicator in Task Manager will not work.
+#### 41. Windows 11 classic right-click context menu & disable menu show delay:
   - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → New *Key* **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → Right-click the newly created key and create one more key named **InprocServer32**, and value of string **(Default)** must be blank.
   - WIN+R → HKEY_CURRENT_USER\Control Panel\Desktop → **MenuShowDelay** → **0**. 
 
-#### 40. Windows 11 wallpaper compression:
+#### 42. Windows 11 wallpaper compression:
 By default, Windows will compress images to around 80-85% before you set them as wallpapers. However, this can sometimes result in blurry images. It doesn't affect performance.
 - **To disable compression**:
 WIN+R → **regedit** → **HKEY_CURRENT_USER\Control Panel\Desktop** → New DWORD(32-bit) **JPEGImportQuality** → Choose **Base** as **Decimal** and click **OK**. After change the **Value** to **100**. Restart PC and re-upload your background.
 - **To revert** the changes, change the DWORD **Value** data to **0**.
 
-#### 41. ReBar / SAM:
+#### 43. ReBar / SAM:
 ReBar (resizable BAR) enables more efficient communication between the CPU and the graphics card. Enabling this functionality can result in a performance improvement. For AMD ReBar is named SAM, it's the same thing as ReBar.
 
 :warning: To use *ReBar*, you will need a **NVIDIA GeForce RTX 30-series** or **Intel Arc**, a compatible **processor** (10th generation Intel processors or newer), and a compatible **motherboard**.
