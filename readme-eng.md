@@ -254,7 +254,7 @@ The Diagnostic Service allows you to detect and troubleshoot problems related to
 First, you need to disable the services:
 - Diagnostic Policy Service (DPS)
 - Diagnostic Service Host (WdiServiceHost)
-- Diagnostic system node (WdiSystemHost).
+- Diagnostic System Host (WdiSystemHost).
 
 Then change the values in the registry:
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\DiagLog → Start → 0.
