@@ -7,7 +7,7 @@
 
 [Создание загрузочного накопителя для установки Windows](https://github.com/HackMeGG/windows11-setup/blob/main/readme_install_ru.md).
 ___
-[Гайд по настройке системы](https://github.com/HackMeGG/windows11-setup/blob/main/readme-ru.md).
+[Гайд по настройке системы](https://github.com/HackMeGG/windows11-setup/blob/main/readme-guide-ru.md).
 ___
 [Мои игровые настройки](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup.md).
 ___
@@ -20,7 +20,7 @@ To use this guide, just follow the step-by-step instructions. Before making any 
 
 [Create a bootable drive to install Windows](https://github.com/HackMeGG/windows11-setup/blob/main/readme_install_eng.md).
 ___
-[System setup guide](https://github.com/HackMeGG/windows11-setup/blob/main/readme-eng.md).
+[System setup guide](https://github.com/HackMeGG/windows11-setup/blob/main/readme-guide-eng.md).
 ___
 [My games settings](https://github.com/HackMeGG/windows11-setup/blob/main/readme-game-setup.md).
 ___
