@@ -58,10 +58,10 @@ All disks and partitions will appear.
 ___
 
 #### How to setup Windows 11 without a Microsoft Account:
-- Method #1:
+- Method №1:
 
 On the Microsoft account login page, write "USER" in the mail and for password box, after that there will be an error like "Something went wrong", you're done, now write the local pc name.
-- Method #2:
+- Method №2:
 
 On the setup page, where is **"Sign In in your Microsoft account"** click **SHIFT + F10, (on notebooks try FN + SHIFT + F10)**. It will open a CMD, write the command **ncpa.cpl** that will open *Network Connections from Control Panel*, right-click on your connection and click **Disable**. After that, write the command **oobe\bypassnro** and your computer will restart. It will start from the beginning. From the page with internet connection click **"I don't have internet"** and **"Continue with limited setup"** buttons. That's all, now enter a computer name, give a password, or leave it blank. On the page **"Privacy settings for your device"** I recommend disabling all of them.
 ___
