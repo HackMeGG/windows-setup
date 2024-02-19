@@ -283,6 +283,11 @@ https://github.com/HackMeGG/windows-setup/assets/58815983/4050874c-683d-417e-ac7
 Вы можете отключить FSO глобально чтобы не отключать для каждого приложения:
 >WIN + R → regedit → **HKEY_CURRENT_USER\System\GameConfigStore** → **GameDVR_FSEBehavior** (*Dword32bit*)→ значение: **2** (выкл) / **0** (вкл).
 
+### БОНУС. Остановка слежки Windows:
+Вы можете изменить файл "host", чтобы заблокировать слежку Microsoft за вами.
+Для этого перейдите по [этой ссылке](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.winoffice.txt), выделите и скопируйте весь текст из этого файла. Перейдите в **C:\Windows\System32\drivers\etc**. Перетащите файл "host" на рабочий стол, после чего поместите скопированный текст в конец этого файла. Теперь сохраните и перетащите файл "host" обратно в папку.
+
+:warning: Если вы используете Windows Defender, перейдите в раздел **"Защита от вирусов и угроз"** и вы увидите что-то вроде **"PossibleHostsFileHijack"**, нажмите на это предупреждение после того, выберите **"Разрешить на этом устройстве"**, Microsoft просто хочет вернуть исходный файл host, чтобы шпионить за вами.
 ### Дополнительный софт:
 - DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
