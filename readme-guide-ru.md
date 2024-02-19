@@ -292,7 +292,7 @@ https://github.com/HackMeGG/windows-setup/assets/58815983/4050874c-683d-417e-ac7
 - explorerpatcher для кастомизации Windows 11 :warning:Внимание, могут возникнуть проблемы: https://github.com/valinet/ExplorerPatcher
 - Office: https://massgrave.dev/genuine-installation-media.html
 - Изменение яркости монитора: https://apps.microsoft.com/detail/9NW33J738BL0
-- O&O ShutUp10++ отключение слежки: https://www.oo-software.com/en/shutup10
+- O&O ShutUp10++ способ отключение слежки: https://www.oo-software.com/en/shutup10
 
 
 #### Гибернация:
