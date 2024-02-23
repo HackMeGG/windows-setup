@@ -4,7 +4,7 @@
 3. Game Foler -> Game.exe -> Properties -> Compability -> Change Settings for all Users -> Disable fullscreen optimization.
 
 -CS2:
-1. Launch Options: -novid
+1. Launch Options: +engine_low_latency_sleep_after_client_tick true
 2. Resolution: 1080x1080
 3. Sensivity: 1.49
 4. Audio: EQ Profile - CRISP; L/R Isolation - 70%; Perspective Corection - YES.
@@ -15,7 +15,7 @@
 2. Resolution: 1728x1080
 3. Sensivity: 
 -General sensivity: 37
--Vertical multiplier: 1
+-Vertical multiplier: 1.3
 -Aim sens: 37
 -ADS sens: 33
 -Scoping sens: 33
@@ -25,8 +25,8 @@
 -Render scale: 100
 -FOV: 90
 -Anti aliasing: High
--Textures: Medium
+-Textures: Low
 -Sharpen: Enable
 -DirectX 11 Enhanced
--And the rest: Very Low or Disable.
+-And the rest: Very Low or Disabled.
 
