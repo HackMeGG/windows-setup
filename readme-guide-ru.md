@@ -18,6 +18,7 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 <details>
 <summary>Инструкция по Nvcleanstall</summary>
 <br>
+
 1) Скачиваем последний драйвер GeForce Game Ready Driver для вашего ГПУ.
 2) Запускаем Nvcleanstall.
 3) Жмём на раздел Use driver files on disk и указываем путь до драйвера.
@@ -39,11 +40,11 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 9) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
 10) Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel).
 </details>
-___
 
 <details>
 <summary>Инструкция по Radeon Software Slimmer</summary>
 <br>
+
 1) Скачиваем последний драйвер Recommended с сайта AMD.
 2) Запускаем Radeon Software Slimmer.
 3) Жмём на раздел **Pre Install** и указываем путь до драйвера.
@@ -55,7 +56,7 @@ ___
 1) Нажимаем **Modify Installer** и потом **Run Installer**, устанавливаем драйвер из окна которая появится.
 2) Настроить панель.
 </details>
-___
+
 
 ### 5. Установка необходимого софта:
 * Установить пакет [Visual C++ AIO](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
