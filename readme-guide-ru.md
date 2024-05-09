@@ -5,64 +5,56 @@
 ### 1. Активация Windows навсегда:
 Скопировать команду в *Powershell* (от имени администратора) *без скобок*: "**irm https://massgrave.dev/get | iex**".
 ### 2. Отключаем автоматическое обновления драйверов:
-WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → 
-
-Создаём раздел **WindowsUpdate** → 
-
-И в нём создаём параметр **dword 32-bit** с названием **ExcludeWUDriversInQualityUpdate** со значением **1** . 
+WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → Создаём раздел **WindowsUpdate** → в нём создаём параметр **dword 32-bit** с названием **ExcludeWUDriversInQualityUpdate** и со значением **1** . 
 
 Дальше переходим → **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching** → находим **SearchOrderConfig** → выставляем значение **0** .
 ### 3. Установка драйверов:
-Установите последние драйвера на чипсет, лан, вайфай & блютуз, звук. Их можно взять с сайта вашей материнской платы.
+Установите последние драйвера на чипсет, лан, вайфай & блютуз (если есть), звук. Их можно взять с сайта вашей материнской платы.
 ### 4. Установка драйвера на ГПУ:
-Сначала удаляем через DDU дефолтный драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
+1. Сначала удаляем через DDU драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
 
-Устанавливаем драйвер на ГПУ. Рекомендую через Nvcleanstall (для Nvidia) или Radeon Software Slimmer (для AMD).
-
-#### :arrow_right:Инструкция по Nvcleanstall:
+2. Устанавливаем драйвер на ГПУ. 
+- Рекомендую установить чистый драйвер через Nvcleanstall (для Nvidia) или Radeon Software Slimmer (для AMD).
+<details>
+<summary>Инструкция по Nvcleanstall</summary>
+<br>
 1) Скачиваем последний драйвер GeForce Game Ready Driver для вашего ГПУ.
 2) Запускаем Nvcleanstall.
 3) Жмём на раздел Use driver files on disk и указываем путь до драйвера.
 4) Отключаем все галочки и идём к 8 пункту.
-    
    :warning: Если вам нужен GeForce Experience, звук по HDMI и/или USB-C порт с видеокарты, то прочтите 5-7 шаг.
 5) Для звука по HDMI поставьте галочку напротив HD Audio via HDMI.
 6) Для GeForce Experience поставьте галочку напротив GeForce Experience, NV Container, Telemetry, NV Backend, NodeJS.
 7) Для USB-C поставьте галочку напротив USB-C driver.
-   
     :warning:Если у вас ноутбук поставьте галочку напротив Optimus и USB-C!
-
 8) Нажимаем *Next* и во вкладки **Tweaks** выбираем **Disable Installer Telemetry, Disable MPO**. 
-   
    :warning:Если ранее не удаляли старый драйвер через DDU, то поставьте галочку напротив **Perform a clean installation**. 
-   
    Далее нажимаем **Show Expert Tweaks**, выбираем *Disable Driver Telemetry, Disable Nvidia HD Audio device sleep timer, Disable HDCP*,  
 - *Enable Message Signaled Interrupts*: 
     * Interrupt Policy: **Default** 
     * Interrupt Priority: **High**
-
 - *Rebuild digital signature*: 
     * **Use method compatible with EasyAntiCheat**
     * **Auto accept driver unsigned warning**
-
 9) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
 10) Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel).
+</details>
 ___
 
-#### :arrow_right:Инструкция по Radeon Software Slimmer:
+<details>
+<summary>Инструкция по Radeon Software Slimmer</summary>
+<br>
 1) Скачиваем последний драйвер Recommended с сайта AMD.
 2) Запускаем Radeon Software Slimmer.
 3) Жмём на раздел **Pre Install** и указываем путь до драйвера.
 4) Указываем путь для распаковки (создаём новую папку и указываем её, папка должна быть пустая.)
 5) Отключаем все пункты в Scheduled Tasks.
 6) В Packages оставляем только "**AMD Display Driver; AMD Settings; AMD WVR64; Branding64**", остальное выключаем.
- 
 :warning:Если вам нужен звук с HDMI, то оставьте: **"HDMI Audio Driver"; "High Definition Audio Controller"**.
-
 :warning:Если вам нужна запись ReLive то оставьте: **"DVR64"**.
-
-7) Нажимаем **Modify Installer** и потом **Run Installer**, устанавливаем драйвер из окна которая появится.
-8) Настроить панель.
+1) Нажимаем **Modify Installer** и потом **Run Installer**, устанавливаем драйвер из окна которая появится.
+2) Настроить панель.
+</details>
 ___
 
 ### 5. Установка необходимого софта:
