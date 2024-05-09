@@ -14,7 +14,7 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 1. Сначала удаляем через DDU драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
 
 2. Устанавливаем драйвер на ГПУ. 
-- Рекомендую установить чистый драйвер через Nvcleanstall (для Nvidia) или Radeon Software Slimmer (для AMD).
+- Рекомендую установить чистый драйвер через **Nvcleanstall (для Nvidia)** или **Radeon Software Slimmer (для AMD)**.
 <details>
 <summary>Инструкция по Nvcleanstall</summary>
 <br>
@@ -22,28 +22,24 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 1) Скачиваем последний драйвер GeForce Game Ready Driver для вашего ГПУ.
 2) Запускаем Nvcleanstall.
 3) Жмём на раздел Use driver files on disk и указываем путь до драйвера.
-4) Отключаем все галочки и идём к 8 пункту.
+4) Для чистого драйвера отключаем все галочки и идём к 5 пункту.
     
-   :warning: Если вам нужен GeForce Experience, звук по HDMI и/или USB-C порт с видеокарты, то прочтите 5-7 шаг.
-5) Для звука по HDMI поставьте галочку напротив HD Audio via HDMI.
-6) Для GeForce Experience поставьте галочку напротив GeForce Experience, NV Container, Telemetry, NV Backend, NodeJS.
-7) Для USB-C поставьте галочку напротив USB-C driver.
-   
-    :warning:Если у вас ноутбук поставьте галочку напротив Optimus и USB-C!
+   :warning: Если вам нужен GeForce Experience, звук по HDMI и/или USB-C порт с видеокарты:
+  - Для звука по HDMI поставьте галочку напротив HD Audio via HDMI.
+  - Для GeForce Experience поставьте галочку напротив GeForce Experience, NV Container, Telemetry, NV Backend, NodeJS.
+  - Для USB-C поставьте галочку напротив USB-C driver. 
+  - :warning:Если у вас ноутбук поставьте галочку напротив Optimus и USB-C!
 
-8) Нажимаем *Next* и во вкладки **Tweaks** выбираем **Disable Installer Telemetry, Disable MPO**. 
-9) 
-   :warning:Если ранее не удаляли старый драйвер через DDU, то поставьте галочку напротив **Perform a clean installation**. 
-   
-   Далее нажимаем **Show Expert Tweaks**, выбираем *Disable Driver Telemetry, Disable Nvidia HD Audio device sleep timer, Disable HDCP*,  
+5) Нажимаем *Next* и во вкладки **Tweaks** выбираем **Disable Installer Telemetry, Disable MPO, Perform a clean installation**.
+6) Далее нажимаем **Show Expert Tweaks**, выбираем **Disable Driver Telemetry, Disable Nvidia HD Audio device sleep timer, Disable HDCP**,  
 - *Enable Message Signaled Interrupts*: 
     * Interrupt Policy: **Default** 
     * Interrupt Priority: **High**
 - *Rebuild digital signature*: 
     * **Use method compatible with EasyAntiCheat**
     * **Auto accept driver unsigned warning**
-1) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
-2)  Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel).
+7) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
+8)  **Настроить панель**, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel).
 </details>
 
 <details>
@@ -54,7 +50,7 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 2) Запускаем Radeon Software Slimmer.
 3) Жмём на раздел **Pre Install** и указываем путь до драйвера.
 4) Указываем путь для распаковки (создаём новую папку и указываем её, папка должна быть пустая.)
-5) Отключаем все пункты в Scheduled Tasks.
+5) Отключаем все пункты в **Scheduled Tasks**.
 6) В Packages оставляем только "**AMD Display Driver; AMD Settings; AMD WVR64; Branding64**", остальное выключаем.
 :warning:Если вам нужен звук с HDMI, то оставьте: **"HDMI Audio Driver"; "High Definition Audio Controller"**.
 :warning:Если вам нужна запись ReLive то оставьте: **"DVR64"**.
