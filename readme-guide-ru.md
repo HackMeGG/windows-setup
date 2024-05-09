@@ -23,13 +23,18 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 2) Запускаем Nvcleanstall.
 3) Жмём на раздел Use driver files on disk и указываем путь до драйвера.
 4) Отключаем все галочки и идём к 8 пункту.
+    
    :warning: Если вам нужен GeForce Experience, звук по HDMI и/или USB-C порт с видеокарты, то прочтите 5-7 шаг.
 5) Для звука по HDMI поставьте галочку напротив HD Audio via HDMI.
 6) Для GeForce Experience поставьте галочку напротив GeForce Experience, NV Container, Telemetry, NV Backend, NodeJS.
 7) Для USB-C поставьте галочку напротив USB-C driver.
+   
     :warning:Если у вас ноутбук поставьте галочку напротив Optimus и USB-C!
+
 8) Нажимаем *Next* и во вкладки **Tweaks** выбираем **Disable Installer Telemetry, Disable MPO**. 
+9) 
    :warning:Если ранее не удаляли старый драйвер через DDU, то поставьте галочку напротив **Perform a clean installation**. 
+   
    Далее нажимаем **Show Expert Tweaks**, выбираем *Disable Driver Telemetry, Disable Nvidia HD Audio device sleep timer, Disable HDCP*,  
 - *Enable Message Signaled Interrupts*: 
     * Interrupt Policy: **Default** 
@@ -37,8 +42,8 @@ WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windo
 - *Rebuild digital signature*: 
     * **Use method compatible with EasyAntiCheat**
     * **Auto accept driver unsigned warning**
-9) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
-10) Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel).
+1) Нажимаем **Next** и потом **Install**, устанавливаем драйвер из окна которая появится.
+2)  Настроить панель, фото с настройками в [репозитории](https://github.com/HackMeGG/windows11-setup/tree/main/nvidia-panel).
 </details>
 
 <details>
