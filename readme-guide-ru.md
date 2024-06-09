@@ -17,8 +17,8 @@
 
 ##### 2.1. Установка драйвера на ГПУ:
 
-- Сначала удаляем через DDU дефолтный драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
-- Установите драйвер на ГПУ. Рекомендую установить чистый образ драйвера через Nvcleanstall (для nvidia) или Radeon Software Slimmer (для AMD).
+- Сначала удаляем через [DDU](https://www.guru3d.com/download/display-driver-uninstaller-download/) дефолтный драйвер на ГПУ который сам установился, после чего ПК сам перезапустится.
+- Установите драйвер на ГПУ. Рекомендую установить чистый образ драйвера через [Nvcleanstall (для NVidia)](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) или [Radeon Software Slimmer (для AMD)](https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases).
 
 <details>
 <summary>Инструкция по Nvcleanstall</summary>
