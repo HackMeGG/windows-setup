@@ -6,8 +6,7 @@
 
 Перейдите в раздел **Обновления Windows** и установите все доступные обновления.
 
-#### 1. ```diff
-- text in red Отключаем автоматическое обновления драйверов (по желанию): ```
+#### 1. Отключаем автоматическое обновления драйверов (по желанию):
 
 - WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → Создаём раздел **WindowsUpdate** → И в нём создаём параметр Dword32 с названием **ExcludeWUDriversInQualityUpdate** со значением **1**.
 - Дальше переходим по **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching** находим **SearchOrderConfig** и выставляем значение **0**.
