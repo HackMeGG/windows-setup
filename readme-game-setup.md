@@ -1,14 +1,12 @@
 -Global Settings:
 1. Mouse DPI: 800
 2. Steam Overlay - Disabled
-3. Game Foler -> Game.exe -> Properties -> Compability -> Change Settings for all Users -> Disable fullscreen optimization.
 
 -CS2:
-1. Launch Options: +engine_low_latency_sleep_after_client_tick true
-2. Resolution: 1080x1080
-3. Sensivity: 1.49
-4. Audio: EQ Profile - CRISP; L/R Isolation - 70%; Perspective Corection - YES.
-5. Graphics: Boost Player contrast - Enabled; VSync - Disabled; 4X MSAA; Shadows, Texture, Shader, Particle - LOW; Filtering Mode - Bilinear; Ambient Occlusion - Disabled; HDR - Quality; FSR - Disabled; Nvidia Reflex - Enabled.
+1. Resolution: 1080x1080
+2. Sensivity: 1.49
+3. Audio: EQ Profile - CRISP; L/R Isolation - 70%; Perspective Corection - YES.
+4. Graphics: Boost Player contrast - Enabled; VSync - Disabled; 4X MSAA; Shadows, Texture, Shader, Particle - LOW; Filtering Mode - Bilinear; Ambient Occlusion - Disabled; HDR - Quality; FSR - Disabled; Nvidia Reflex - Enabled.
 
 -PUBG:
 1. Launch Options: -koreanrating
