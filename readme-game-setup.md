@@ -22,9 +22,7 @@
 5. Graphics: 
 -Render scale: 100
 -FOV: 90
--Anti aliasing: High
--Textures: Low
--Sharpen: Enable
+-Graphics: Very Low or Disabled.
 -DirectX 11 Enhanced
--And the rest: Very Low or Disabled.
+
 
