@@ -6,7 +6,7 @@
 1. Resolution: 1080x1080
 2. Sensivity: 1.49
 3. Audio: EQ Profile - CRISP; L/R Isolation - 70%; Perspective Corection - YES.
-4. Graphics: Boost Player contrast - Enabled; VSync - Disabled; 4X MSAA; Shadows, Texture, Shader, Particle - LOW; Filtering Mode - Bilinear; Ambient Occlusion - Disabled; HDR - Quality; FSR - Disabled; Nvidia Reflex - Enabled.
+4. Graphics: Boost Player contrast - Enabled; VSync - Disabled; 2X MSAA; Shadows, Texture, Shader, Particle - LOW; Filtering Mode - Bilinear; Ambient Occlusion - Disabled; HDR - Performance; FSR - Disabled; Nvidia Reflex - Enabled.
 
 -PUBG:
 1. Launch Options: -koreanrating
