@@ -236,7 +236,7 @@ Hyper-V - это средство виртуализации, встроенно
 #### Дополнительный софт:
 
 - Активация Windows навсегда (команда для Powershell): **irm https://massgrave.dev/get | iex**
-- DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
+- DISM++: https://www.majorgeeks.com/files/details/dism.html
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
 - Defender Remover: https://github.com/ionuttbara/windows-defender-remover/releases
