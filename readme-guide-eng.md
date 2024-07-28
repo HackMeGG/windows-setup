@@ -141,13 +141,13 @@ Explorer → Local Disk C → PCM → Properties →
 
 SysMain → Displayed name: SysMain \
 WSearch → Displayed name: Windows Search \.
-DiagTrack → Display name: Connected user functionality and telemetry \
-TrkWks → Displayed name: Client for tracking changed connections \
+DiagTrack → Display name: Connected user experiences and telementry \
+TrkWks → Displayed name: Distributed Link Tracking Client \
 WalletService → Displayed name: Wallet Service\
-wisvc → Displayed name: Windows Preview Service\
+wisvc → Displayed name: Windows Insider Service\
 WpcMonSvc → Displayed name: Parental Controls\
 WerSvc → Displayed name: Windows Error Logging Service\
-lfsvc → Displayed name: Geographical Location Service\
+lfsvc → Displayed name: Geolocation service\
 PhoneSvc → Displayed name: Telephone Service \
 MapsBroker → Displayed name: Downloaded Map Manager\
 Spooler → Displayed name: Print Manager. Disable if you do not have a printer (including network printers)
@@ -237,7 +237,7 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
 
 - Activating Windows forever (Powershell command): **irm https://massgrave.dev/get | iex**
 - Defender Remover: https://github.com/ionuttbara/windows-defender-remover/releases
-- DISM++: https://github.com/Chuyu-Team/Dism-Multi-language/releases
+- DISM++: https://www.majorgeeks.com/files/details/dism.html
 - Autoruns: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 - DeviceCleanup: https://www.majorgeeks.com/files/details/device_cleanup_tool.html
 - A good free antivirus: https://download.geo.drweb.com/pub/drweb/cureit/cureit.exe
