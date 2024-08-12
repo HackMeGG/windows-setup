@@ -13,7 +13,7 @@ Go to **Windows Updates** and install all available updates and then reboot. Aft
 
 #### 2. Installing Drivers:
 
-1.  Install the latest drivers for chipset, lan, wifi & bluetooth, sound. You can get them from the motherboard website.
+1.  Install the latest drivers for chipset, lan, wifi & bluetooth, sound, GPU (below are instructions for installing a clean driver, you can just install the driver without these instructions).. You can get them from the motherboard website.
 
 ##### 2.1. Installing driver for the GPU:
 
@@ -143,13 +143,8 @@ SysMain → Displayed name: SysMain \
 WSearch → Displayed name: Windows Search \.
 DiagTrack → Display name: Connected user experiences and telementry \
 TrkWks → Displayed name: Distributed Link Tracking Client \
-WalletService → Displayed name: Wallet Service\
-wisvc → Displayed name: Windows Insider Service\
-WpcMonSvc → Displayed name: Parental Controls\
 WerSvc → Displayed name: Windows Error Logging Service\
 lfsvc → Displayed name: Geolocation service\
-PhoneSvc → Displayed name: Telephone Service \
-MapsBroker → Displayed name: Downloaded Map Manager\
 Spooler → Displayed name: Print Manager. Disable if you do not have a printer (including network printers)
 
 #### 10. Disable results from the internet in search:
