@@ -6,7 +6,7 @@
 
 Go to **Windows Updates** and install all available updates and then reboot. After that pause it for 5 weeks.
 
-#### 1. Disable automatic driver updates:
+#### 1. Disable automatic driver updates (optional):
 
 - WIN+R → **regedit** → **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows** → Create a section named **WindowsUpdate** → And in it create a Dword32 parameter named **ExcludeWUDriversInQualityUpdate** with the value **1**.
 - Then go to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching** find **SearchOrderConfig** and set the value to **0**.
@@ -154,11 +154,11 @@ WIN+R → regedit → **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Ex
 #### 11. Disable background applications:
 
 Windows 10:
-Settings → privacy → background applications → uncheck the box.
+Settings → privacy → background applications → uncheck the box. \
 Windows 11:
 WIN+R → gpedit.msc → Computer Configuration > Administrative Templates > Windows Components > Application Privacy → Allow Windows applications to run in the background → "Enabled" and below set "Force Deny".
 
-#### 12. Disabling Windows Copilot Windows 11:
+#### 12. Disabling Windows Copilot Windows 11 (optional):
 
 WIN+R → gpedit.msc → User Configuration > Administrative Templates > Windows Components > Windows Copilot → Disable Windows Copilot select "Enabled".
 
@@ -196,7 +196,7 @@ Settings → Accounts → Logon Options → Disable the "Automatically save my r
 
 **Microsoft Store** → click the profile icon → **Application Settings** → **Application Update** → switch to "**Off**".
 
-#### 19. Disabling Hyper-V:
+#### 19. Disabling Hyper-V (optional):
 
 Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can conflict with third-party apps on your PC, including other virtualization tools such as VMWare Workstation, VirtualBox, and emulators. As a result, you may encounter the Hyper-V error when trying to launch an app, games, or hardware tuning utilities. So, if you need to use third-party virtualization software, including VMware WorkStation and Virtual Box, you must disable the Hyper-V Hypervisor.
 
@@ -210,14 +210,7 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
 - WIN+R → **regedit** → **HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID** → New _Key_ **{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}** → Right-click the newly created key and create one more key named **InprocServer32**, and value of string **(Default)** must be blank.
 - WIN+R → HKEY_CURRENT_USER\Control Panel\Desktop → **MenuShowDelay** → **0**.
 
-#### 21. Stop Windows Spying:
-
-:warning: It will broke Windows Defender Smart App Control! If you use Defender skip this step.
-
-- WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Allow Diagnostic Data → **Enabled** → **Diagnostic Data off**.
-- WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Limit optional diagnostic data for Desktop Analytics → **Enabled** → **Disable Desktop Analytics collection**.
-
-#### 22. Clean the system:
+#### 21. Clean the system:
 
 - WIN+R → **%temp%** → Delete everything.
 - WIN+R → **temp** → Delete everything.
@@ -226,7 +219,14 @@ Hyper-V is a virtualization tool embedded in Windows. Unfortunately, Hyper-V can
 - Search for **Disk Cleanup** → Disk C → Pin them all → OK.
 - WIN+R → **cmd** → ipconfig /flushdns
 
-#### 23. Disable unnecessary applications startup.
+#### 22. Disable unnecessary applications startup.
+
+#### 23. Stop Windows Spying (optional):
+
+:warning: It will broke Windows Defender Smart App Control! If you use Defender skip this step.
+
+- WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Allow Diagnostic Data → **Enabled** → **Diagnostic Data off**.
+- WIN+R → gpedit.msc → Computer Configuration → Administrative Templates → Windows Components → Data Collection and Preview Builds → Limit optional diagnostic data for Desktop Analytics → **Enabled** → **Disable Desktop Analytics collection**.
 
 #### Additional software:
 
