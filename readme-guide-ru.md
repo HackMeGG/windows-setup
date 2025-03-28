@@ -75,7 +75,7 @@
 #### 3. Установка нужного софта:
 
 - Установить пакет [Visual C++ AIO](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
-- Установить [DirectX](https://www.microsoft.com/en-us/Download/confirmation.aspx?id=35)
+- Установить [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 - Установить [.Net Framework 4.8.1](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 - Установить [7zip](https://www.7-zip.org/)
 - По желанию установить [Java JDK](https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows)
