@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+; Отключаем службы (тип запуска = 4)
+
+; SysMain (SuperFetch)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SysMain]
+"Start"=dword:00000004
+
+; Windows Search (поиск)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch]
+"Start"=dword:00000004
+
+; Диагностика и телеметрия (DiagTrack)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+
+; Клиент отслеживания связей (TrkWks)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkWks]
+"Start"=dword:00000004
+
+; Служба регистрации ошибок (WerSvc)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
+"Start"=dword:00000004
+
+; Служба географического положения (lfsvc)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]
+"Start"=dword:00000004
+
+; Диспетчер печати (Spooler) — отключаем, если нет принтеров
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler]
+"Start"=dword:00000004
